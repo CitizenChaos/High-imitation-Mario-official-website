@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223" height="62" viewBox="0 0 223 62">
+  <defs>
+    <path id="action-text-swim-b" d="M81.328,177.352 L91.624,157.624 L63.04,143.656 L66.568,137.824 L81.4,146.968 L88.744,133.072 L71.464,124.36 L49.144,128.248 L38.92,146.176 L66.856,159.568 L62.536,165.832 L46.048,155.608 L38.2,168.568 L55.552,179.872 L81.328,177.352 Z M150.016,178.144 L162.904,138.472 L143.536,133.36 L137.632,157.912 L129.928,144.736 L119.848,156.544 L117.4,125.152 L93.856,128.968 L103.648,175.912 L121.072,177.928 L128.128,166.048 L133.096,179.296 L150.016,178.144 Z M181.408,177.496 L189.472,135.88 L169.096,131.56 L166.504,178.72 L181.408,177.496 Z M256.648,179.368 L250.096,130.552 L237.064,128.752 L228.352,142.288 L223.888,126.88 L210.28,124.936 L191.776,169.504 L210.28,178 L218.056,152.44 L225.544,165.112 L236.272,154.888 L236.416,181.096 L256.648,179.368 Z"/>
+    <filter id="action-text-swim-a" width="103.7%" height="114.1%" x="-.9%" y="-3.5%" filterUnits="objectBoundingBox">
+      <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-38 -124)">
+    <use fill="#000" filter="url(#action-text-swim-a)" xlink:href="#action-text-swim-b"/>
+    <use fill="#FFF" xlink:href="#action-text-swim-b"/>
+  </g>
+</svg>

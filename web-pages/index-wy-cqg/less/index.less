@@ -1,0 +1,1350 @@
+.container {
+  width: 1286px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline-style: none;
+}
+
+.nav {
+  height: 72px;
+
+  .top-nav {
+    height: 42px;
+    background-color: #fff;
+    position: relative;
+    padding-right: 110px;
+
+    input {
+      width: 355px;
+      height: 34px;
+      border-radius: 20px;
+      padding: 0 15px;
+      margin: 4px 0;
+      color: #888;
+      transition: color 200ms ease-in-out;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      right: 170px;
+      line-height: 42px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #888;
+    }
+
+    .loading {
+      margin-top: 6px;
+      width: 30px;
+      margin-left: 10px;
+      border-radius: 50%;
+    }
+
+    .logo {
+      width: 165px;
+      height: 110px;
+      position: absolute;
+      left: 0px;
+      top: -25px;
+      z-index: 1000;
+      border-radius: 0 0 15px 15px;
+      transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      background: url('./../images/logo-nintendo.svg') no-repeat center 50px;
+      background-color: #E60012;
+    }
+
+    .logo:hover {
+      transform: translateY(20px);
+      transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .nav a{
+      display: block;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  .box {
+    background-color: #dadada;
+
+    .bottom-nav {
+      height: 30px;
+      padding-left: 200px;
+      line-height: 30px;
+      background-color: #dadada;
+
+      ul {
+        li {
+          float: left;
+          width: 14.28%;
+          text-align: center;
+          transition: color 0.3s, background 0.3s;
+
+          a {
+            display: inline-block;
+            width: 100%;
+          }
+
+          a:hover {
+            color: #888;
+            text-decoration: none;
+          }
+        }
+
+        li:nth-child(1):hover {
+          background-color: #fff;
+
+          a {
+            color: #000;
+          }
+        }
+
+        li:nth-child(2):hover {
+          background-color: #CE181E;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(3):hover {
+          background-color: #FF7D00;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(4):hover {
+          background-color: #fff;
+
+          a {
+            color: #000;
+          }
+        }
+
+        li:nth-child(5):hover {
+          background-color: #FF3F3F;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(6):hover {
+          background-color: #00BFF3;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(7):hover {
+          background-color: #fff;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.opacitynav {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  position: -webkit-sticky;
+  position: sticky;
+  float: left;
+  top: 0;
+  z-index: 999;
+
+  .box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      line-height: 55px;
+      text-align: center;
+
+      li {
+        float: left;
+        flex: 1;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-weight: 900;
+          color: #fff;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          letter-spacing: 2px;
+        }
+      }
+
+      li:nth-child(1) a {
+        color: #FFD200;
+      }
+
+      li:nth-child(3) img {
+        height: 45px;
+      }
+
+      li:hover a {
+        color: #FFD200;
+      }
+    }
+  }
+}
+
+.main {
+  height: 640px;
+  background: url('../images/bg-red_2x.jpg');
+
+  .main_content {
+    height: 100%;
+    // background-color: pink;
+
+    .left {
+      width: 60%;
+      height: 585px;
+      // background-color: cyan;
+
+      .txt {
+        font-size: 16px;
+        font-weight: 900;
+        color: #fff;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .line {
+        margin: 0 auto;
+        display: block;
+        width: 140px;
+        height: 4px;
+        background-color: #fff;
+      }
+
+      .mario_logo {
+        margin: 30px auto;
+        width: 520px;
+        height: 120px;
+        background: url('../images/txt-mario.svg') no-repeat center center;
+      }
+
+      .paragraph {
+        text-align: center;
+        margin: 0 auto;
+        width: 520px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .threepipes {
+        height: 218px;
+        width: 520px;
+        margin: 30px auto 0;
+        position: relative;
+
+        .one,
+        .two,
+        .three {
+          width: 173px;
+          height: 100%;
+          position: absolute;
+          top: 230px;
+          text-align: center;
+          line-height: 42px;
+          background: url(../images/wrap-pipe.png) no-repeat center top;
+
+          a {
+            display: block;
+            width: 170px;
+            height: 50px;
+            margin-top: 70px;
+            border: 4px solid #f00;
+            border-radius: 25px;
+            background-color: #fff;
+            color: #f00;
+            font-weight: 900;
+          }
+
+          a:hover {
+            border: 4px solid #fff;
+            background-color: #f00;
+            color: #fff;
+          }
+        }
+
+        .one {
+          left: 0;
+        }
+
+        .two {
+          left: 33.33%;
+        }
+
+        .three {
+          left: 66.66%;
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+      height: 585px;
+      // background-color: pink;
+      position: relative;
+
+      .one {
+        position: absolute;
+        left: -20px;
+        bottom: -90px;
+        opacity: 0;
+        z-index: 2;
+
+        img {
+          display: block;
+          width: 110%;
+          height: 110%;
+        }
+      }
+
+      .two {
+        position: absolute;
+        left: 15px;
+        bottom: -130px;
+        z-index: 3;
+
+        img {
+          display: block;
+          width: 0%;
+          height: 0%;
+        }
+      }
+
+      .three {
+        position: absolute;
+        left: 0px;
+        bottom: -40px;
+        opacity: 0;
+        z-index: 1;
+
+        img {
+          display: block;
+          width: 110%;
+          height: 110%;
+        }
+      }
+
+      .four {
+        position: absolute;
+        top: 0;
+        right: -100px;
+        z-index: 0;
+
+        img {
+          display: block;
+          width: 340px;
+          height: 160px;
+        }
+      }
+    }
+  }
+}
+
+.video {
+  height: 875px;
+  position: relative;
+  z-index: 4;
+
+
+  .bgi {
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg-smash-blur.jpg') no-repeat center top;
+    background-size: 100% auto;
+  }
+
+  .videocard {
+    width: 930px;
+    height: 540px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+
+    .mp4 {
+      width: 908px;
+      height: 510px;
+      margin: 15px auto;
+      background: url('../images/bg-smash.jpg') 908px 510px;
+      cursor: pointer;
+
+      &:hover .playin {
+        transform: scale(1.2);
+      }
+
+      video {
+        display: none;
+        width: 908px;
+        height: 510px;
+      }
+
+      .playout {
+        width: 77px;
+        height: 77px;
+        background: url('../images/playout.png');
+        background-size: 77px 77px;
+        margin: 216px auto;
+
+        .playin {
+          width: 26px;
+          height: 30px;
+          background: url('../images/playin.png');
+          background-size: 26px 30px;
+          margin: 23px 30px;
+          transition: transform .3s;
+        }
+      }
+    }
+  }
+
+  .textcard {
+    width: 930px;
+    height: 140px;
+    position: absolute;
+    top: 685px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+
+    .one,
+    .two,
+    .three,
+    .four {
+      width: 8px;
+      height: 8px;
+      background-color: #F8E190;
+      border-radius: 50%;
+      position: absolute;
+      box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .one {
+      top: 15px;
+      left: 15px;
+    }
+
+    .two {
+      top: 15px;
+      right: 15px;
+    }
+
+    .three {
+      bottom: 15px;
+      left: 15px;
+    }
+
+    .four {
+      bottom: 15px;
+      right: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #888;
+      padding: 40px 40px;
+    }
+  }
+
+  .topdivide {
+    position: absolute;
+    top: -27px;
+    height: 128px;
+    width: 100%;
+    background: url('../images/bg-blocks.png');
+  }
+}
+
+.game {
+  height: 812px;
+  background: url('../images/bg-green_2x.jpg');
+  padding-top: 40px;
+
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .line {
+    width: 200px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 auto 40px;
+  }
+
+  .items {
+    height: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six {
+      width: 380px;
+      height: 268px;
+      z-index: 1;
+      cursor: pointer;
+
+      .gamecard {
+        width: 360px;
+        height: 248px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 10px;
+        padding-top: 10px;
+        text-align: center;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+
+        img {
+          width: 95%;
+          margin-bottom: 10px;
+        }
+
+        p {
+          text-align: left;
+          padding-left: 10px;
+          color: #f00;
+        }
+      }
+    }
+
+    .onehide,
+    .twohide,
+    .threehide,
+    .fourhide,
+    .fivehide,
+    .sixhide {
+      width: 360px;
+      height: 288px;
+      position: absolute;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+      z-index: 2;
+      opacity: 0;
+      padding-top: 10px;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        width: 95%;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+        padding-left: 10px;
+        color: #f00;
+      }
+
+      .learnmore {
+        width: 250px;
+        height: 30px;
+        border-radius: 15px;
+        border: 3px solid #1A5EBC;
+        font-size: 14px;
+        color: #1A5EBC;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0 auto;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          border: 3px solid #fff;
+          color: #fff;
+          background-color: #1A5EBC;
+        }
+      }
+    }
+
+    .onehide {
+      top: 0;
+      left: 83px;
+    }
+
+
+    .twohide {
+      top: 0;
+      left: 463px;
+    }
+
+    .threehide {
+      top: 0;
+      left: 843px;
+    }
+
+    .fourhide {
+      top: 268px;
+      left: 83px;
+    }
+
+    .fivehide {
+      top: 268px;
+      left: 463px;
+    }
+
+    .sixhide {
+      top: 268px;
+      left: 843px;
+    }
+
+
+    .coin {
+      width: 292px;
+      height: 168px;
+      background: url('../images/char-coins-two-stacked_2x.png');
+      background-size: 292px 168px;
+      position: absolute;
+      left: -95px;
+      bottom: -80px;
+    }
+
+    .moregames {
+      font-size: 18px;
+      color: #fff;
+      padding-top: 20px;
+
+      a {
+        color: #fff;
+        font-weight: 700;
+        padding: 0 15px;
+      }
+
+      a:hover {
+        color: #f00;
+      }
+    }
+
+    .flower {
+      width: 424px;
+      height: 173px;
+      background: url('../images/char-brick-flower_2x.png');
+      background-size: 424px 173px;
+      position: absolute;
+      top: -130px;
+      right: -235px;
+      z-index: 0;
+    }
+  }
+
+
+}
+
+.amiibo {
+  height: 673px;
+  background: url('../images/bg-yellow_2x.jpg');
+  padding-top: 40px;
+
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .line {
+    width: 200px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 auto 40px;
+  }
+
+  .box {
+    height: 361px;
+    // background-color: pink;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .one,
+    .two,
+    .three,
+    .four {
+      width: 285px;
+      // background-color: green;
+      position: relative;
+      z-index: 1;
+
+      .card {
+        width: 261px;
+        height: 336px;
+        background-color: #fff;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+
+        .lt,
+        .rt,
+        .lb,
+        .rb {
+          width: 8px;
+          height: 8px;
+          background-color: #F8E190;
+          border-radius: 50%;
+          position: absolute;
+          box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .lt {
+          top: 10px;
+          left: 25px;
+        }
+
+        .rt {
+          top: 10px;
+          right: 25px;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .lb {
+          bottom: 35px;
+          left: 25px;
+        }
+
+        .rb {
+          bottom: 35px;
+          right: 25px;
+        }
+
+        p {
+          text-align: center;
+          color: #f00;
+          font-size: 18px;
+          font-weight: 700;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .coin {
+      width: 294px;
+      height: 346px;
+      background: url('../images/char-coins-corner-top-right_2x.png');
+      background-size: 294px 346px;
+      position: absolute;
+      top: -135px;
+      right: -35px;
+    }
+
+    .brick {
+      width: 929px;
+      height: 85px;
+      background: url('../images/char-bricks-used_2x.png');
+      background-size: 929px 85px;
+      position: absolute;
+      bottom: -110px;
+      left: -700px;
+    }
+  }
+
+  .more {
+    width: 476px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    border: 3px solid #f00;
+    margin-top: 35px;
+    background-color: #fff;
+    cursor: pointer;
+
+    p {
+      color: #f00;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 44px;
+    }
+  }
+
+  .more:hover {
+    border: 3px solid #fff;
+    background-color: #f00;
+
+    p {
+      color: #fff;
+    }
+  }
+}
+
+// 陈庆功部分
+// 活动部分
+.activity {
+  width: 100%;
+  height: 710.88px;
+  background: url(../images/页面背景.jpg) no-repeat center center;
+  background-size: cover;
+
+  .content {
+    height: 600px;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: -15px;
+    left: 50px;
+  }
+
+  .container>h2 {
+    display: block;
+    font-size: 36px;
+    font-weight: 900;
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    left: 480px;
+  }
+
+  .gang {
+    width: 200px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 110px;
+    left: 630px;
+  }
+
+  .box {
+    width: 780px;
+    height: 380px;
+    position: absolute;
+    top: 165px;
+    left: 380px;
+
+    .one,
+    .two,
+    .three,
+    .four {
+      position: relative;
+      width: 380px;
+      height: 180px;
+      transition: all .2s;
+
+      &:hover {
+        box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+      }
+
+      img {
+        width: 190px;
+        height: 180px;
+        position: absolute;
+        top: 0;
+        left: 190px;
+      }
+
+      .yuan {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        .small {
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: url('../images/icon-poll_1.png') no-repeat 3px 2px;
+          background-size: 55px 55px;
+          background-color: #fff;
+        }
+
+        img {
+          display: block;
+          width: 59.8px;
+          height: 59.8px;
+          margin: 10px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }
+      }
+
+      &:nth-child(2) .wen p,
+      &:nth-child(2) .wen span,
+      &:nth-child(2) .wen h3 {
+        color: white;
+      }
+
+      &:nth-child(3) .wen p,
+      &:nth-child(3) .wen span,
+      &:nth-child(3) .wen h3 {
+        color: white;
+      }
+
+      .wen {
+        position: relative;
+        width: 150px;
+        height: 180px;
+        padding-top: 70px;
+        padding-left: 12px;
+
+        p {
+          position: absolute;
+          top: 40px;
+          left: 10px;
+          font-size: 9px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          padding: 0 6px;
+          color: black;
+          background-color: rgba(0, 0, 0, .2);
+          border-radius: 5px;
+
+        }
+
+        span {
+          font-size: 14px;
+          height: 24px;
+          line-height: 24px;
+          font-weight: 800;
+          color: black;
+        }
+
+        h3 {
+          font-size: 8px;
+          color: black;
+        }
+      }
+    }
+
+    .one {
+      background-color: yellow;
+      margin-bottom: 20px;
+
+      .yuan {
+        background-color: yellow;
+      }
+    }
+
+    .two {
+      background-color: #ee0500;
+      margin-bottom: 20px;
+
+      .yuan {
+        background-color: #ee0500;
+      }
+    }
+
+    .three {
+      background-color: #00bff3;
+
+      .yuan {
+        background-color: #00bff3;
+      }
+    }
+
+    .four {
+      background-color: #00d2ff;
+
+      .yuan {
+        background-color: #00d2ff;
+      }
+    }
+  }
+
+  .di {
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    top: 700px;
+    left: 0;
+    background: url('../images/zigzag-red-dark_2x.png') repeat-x center top;
+    background-size: 240px 12px;
+  }
+}
+
+// facebook部分
+.facebook {
+  width: 100%;
+  height: 165px;
+  background: url('../images/2.jpg') repeat-x center center;
+  background-size: 244px 266.5px;
+  // position: relative;
+
+  .zhong {
+    height: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -23px;
+      left: 264px;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+      color: white;
+      line-height: 136px;
+      margin-right: 234px;
+
+      a {
+        color: white;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+    }
+
+    ;
+  }
+
+  ;
+}
+
+// 底部部分
+.footer {
+  background: url(../images/ground.png) repeat left top;
+  margin-top: 103px;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: url(../images/leaves.png) repeat-x left top;
+    display: block;
+    height: 103px;
+    width: 100%;
+    position: absolute;
+    top: -103px;
+    left: 0;
+  }
+
+  .row1 {
+    padding-bottom: 26px;
+
+    .foot-share {
+      width: 555px;
+      height: 66px;
+
+      background: #fff;
+      border: 2px solid #E6E6E6;
+      border-radius: 10px;
+      margin: 0 auto;
+      color: #9b9b9b;
+      display: block;
+      position: relative;
+
+      .one,
+      .tow,
+      .three,
+      .four {
+        background: #F8E190;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+      }
+
+      .one {
+        top: 10px;
+        left: 10px;
+      }
+
+      .tow {
+        top: 10px;
+        right: 10px;
+      }
+
+      .three {
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .four {
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .content {
+        height: 100%;
+        display: flex;
+        padding: 0 65px;
+        box-sizing: border-box;
+
+        p {
+          flex: 1;
+          padding: 0 10px;
+          margin: 25px 0;
+          color: #7B7B7B;
+          text-align: center;
+          font-size: 16px;
+        }
+
+        a {
+          flex: 1;
+          display: block;
+          color: #E60012;
+          border: 2px solid #E60012;
+          border-radius: 20px;
+          height: 40px;
+          line-height: 38px;
+          font-weight: 500;
+          text-decoration: none;
+          padding: 0 40px;
+          margin: 12px 36px;
+
+          &:hover {
+            background-color: #E60012;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+  // foot-link
+  .foot-link {
+    height: 345px;
+    background-color: #502B25;
+    padding: 80px 15px 60px 15px;
+    box-sizing: border-box;
+    position: relative;
+
+    // 回到顶部
+    .back {
+
+      .back-top {
+        width: 128px;
+        height: 100px;
+        position: absolute;
+        bottom: 337px;
+        right: 10px;
+        overflow: hidden;
+        z-index: 998;
+
+        img {
+          width: 128px;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+        }
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        z-index: 2;
+        width: 128px;
+        height: 68px;
+        background: url(../images/arrow-backtotop.png) no-repeat;
+        background-size: 100%;
+        color: #fff;
+        position: absolute;
+        top: -45px;
+        right: 10px;
+        z-index: 999;
+
+        &:hover .back-top {
+          height: 200px;
+        }
+
+        span {
+          line-height: 70px;
+        }
+      }
+    }
+
+    .link {
+      height: 205px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+
+        .box1 {
+          width: 92px;
+          height: 92px;
+          background: url(../images/logo-amiibo.svg);
+          cursor: pointer;
+        }
+
+        .box2 {
+          width: 288px;
+          height: 90px;
+          padding-bottom: 10px;
+          position: relative;
+
+          p {
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+          }
+
+          a:nth-child(2) img {
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+          }
+
+          a:nth-child(3) img {
+            position: absolute;
+            bottom: 5px;
+            left: 65px;
+          }
+
+          a:nth-child(4) img {
+            position: absolute;
+            bottom: 5px;
+            right: 87px;
+          }
+
+          a:nth-child(5) img {
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+          }
+
+
+          img {
+            display: block;
+            width: 48px;
+            height: 48px;
+            margin-left: 20px;
+            float: left;
+          }
+        }
+
+        .box3 {
+          // width: 235px;
+          height: 92px;
+          cursor: pointer;
+
+          img:nth-child(1) {
+            width: 136px;
+            height: 90px;
+            margin: 0 7px;
+          }
+
+          img:nth-child(2) {
+            width: 66px;
+            height: 90px;
+            margin: 0 7px;
+          }
+        }
+
+        .box4 {
+          text-align: center;
+          margin: 16px auto 30px;
+          width: 96%;
+
+          a {
+            color: #fff;
+            font-size: 12px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          span {
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+
+        .box5 {
+          margin: 0 auto;
+          position: absolute;
+          bottom: -20px;
+          // right: 25%;
+          left: 50%;
+          transform: translateX(-50%);
+
+          .copy {
+            text-align: center;
+            color: #fff;
+            font-size: 10px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+
+      .box1,
+      .box2,
+      .box3 {
+        margin: 16px;
+      }
+    }
+  }
+}

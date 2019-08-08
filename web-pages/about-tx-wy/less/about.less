@@ -1,0 +1,1222 @@
+// 公共类：
+.container {
+  width: 1286px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline-style: none;
+}
+
+.active {
+  transform: scale(1) translateY(-50%);
+  opacity: 1;
+  transition-delay: .25s;
+}
+
+// 封装的动画
+@keyframes slideLeft {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(-1940px);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(2913px);
+  }
+}
+
+
+// WY完成：
+// 导航栏
+.nav {
+  height: 72px;
+
+  .top-nav {
+    height: 42px;
+    background-color: #fff;
+    position: relative;
+    padding-right: 110px;
+
+    input {
+      width: 355px;
+      height: 34px;
+      border-radius: 20px;
+      padding: 0 15px;
+      margin: 4px 0;
+      color: #888;
+      transition: color 200ms ease-in-out;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      right: 170px;
+      line-height: 42px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #888;
+    }
+
+    .loading {
+      margin-top: 6px;
+      width: 30px;
+      margin-left: 10px;
+      border-radius: 50%;
+    }
+
+    .logo {
+      width: 165px;
+      height: 110px;
+      position: absolute;
+      left: 0px;
+      top: -25px;
+      z-index: 1000;
+      border-radius: 0 0 15px 15px;
+      transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      background: url('../img/logo-nintendo.svg') no-repeat center 50px;
+      background-color: #E60012;
+    }
+
+    .logo:hover {
+      transform: translateY(20px);
+      transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  }
+
+  .box {
+    background-color: #dadada;
+
+    .bottom-nav {
+      height: 30px;
+      padding-left: 200px;
+      line-height: 30px;
+      background-color: #dadada;
+
+      ul {
+        li {
+          float: left;
+          width: 14.28%;
+          text-align: center;
+          transition: color 0.3s, background 0.3s;
+
+          a {
+            display: inline-block;
+            width: 100%;
+          }
+
+          a:hover {
+            color: #888;
+            text-decoration: none;
+          }
+        }
+
+        li:nth-child(1):hover {
+          background-color: #fff;
+
+          a {
+            color: #000;
+          }
+        }
+
+        li:nth-child(2):hover {
+          background-color: #CE181E;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(3):hover {
+          background-color: #FF7D00;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(4):hover {
+          background-color: #fff;
+
+          a {
+            color: #000;
+          }
+        }
+
+        li:nth-child(5):hover {
+          background-color: #FF3F3F;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(6):hover {
+          background-color: #00BFF3;
+
+          a {
+            color: #fff;
+          }
+        }
+
+        li:nth-child(7):hover {
+          background-color: #fff;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 透明固定导航
+.opacitynav {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  position: -webkit-sticky;
+  position: sticky;
+  float: left;
+  top: 0;
+  z-index: 999;
+
+  .box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      line-height: 55px;
+      text-align: center;
+
+      li {
+        float: left;
+        flex: 1;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-weight: 900;
+          color: #fff;
+          font-size: 14px;
+          // 笑笑添加的字体
+          font-family: Arial, Helvetica, sans-serif;
+          letter-spacing: 2px;
+        }
+      }
+
+      li:nth-child(2) a {
+        color: #FFD200;
+      }
+
+      li:nth-child(3) img {
+        height: 45px;
+      }
+
+      li:hover a {
+        color: #FFD200;
+      }
+    }
+  }
+}
+
+// All about
+.aboutmario {
+  // margin-top: 100px;
+  height: 528px;
+  background: url('../img/bg-red_2x.jpg');
+  position: relative;
+
+  .inner {
+    height: 100%;
+    position: relative;
+
+    .left {
+      width: 475px;
+      height: 528px;
+      // background-color: pink;
+      margin-left: 60px;
+      text-align: center;
+      padding-top: 150px;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      .one {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+      .two {
+        color: #fff;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 0;
+      }
+
+      .line {
+        width: 200px;
+        height: 4px;
+        background-color: #fff;
+        margin: 0 auto 30px;
+      }
+
+      .three {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 30px;
+      }
+    }
+
+    .right {
+      width: 0px;
+      height: 0px;
+      margin-right: 60px;
+      position: absolute;
+      top: 528px;
+      right: 0px;
+      opacity: 0;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .divide {
+    height: 128px;
+    width: 100%;
+    background: url('../img/block-divider_2x.png') repeat-x;
+    background-size: contain;
+    position: absolute;
+    bottom: -100px;
+  }
+}
+
+// skills
+.skills {
+  //margin-top记得注释掉
+  width: 100%;
+  height: 950px;
+  background: url('../img/bg-orange_2x.jpg');
+  overflow: hidden;
+
+  .innerskills {
+    height: 100%;
+    padding-top: 100px;
+
+    .top {
+      height: 60px;
+
+      p {
+        color: #fff;
+        font-size: 46px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 200px;
+        background-color: #fff;
+        margin: 0 auto;
+      }
+    }
+
+    .box {
+      width: 100%;
+      height: 890px;
+      position: relative;
+
+      .char-stage1 {
+        width: 100%;
+        height: 890px;
+        background-image: url('../img/action-scene2-background-1.png'), url(../img/action-scene2-background-2.png), url(../img/action-scene2-background-3.png);
+        background-repeat: no-repeat;
+        background-size: 45%, 15%, 15%;
+        background-position: center center, left 595px, right 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .flower {
+          width: 424px;
+          height: 173px;
+          background: url('../img/char-brick-flower.png');
+          position: absolute;
+          top: 0px;
+          left: -220px;
+        }
+
+        .coin {
+          width: 292px;
+          height: 168px;
+          background: url('../img/char-coins-stacked.png');
+          position: absolute;
+          right: -115px;
+          top: 265px;
+        }
+
+        .marioshell {
+          width: 450px;
+          height: 470px;
+          background: url('../img/char-mario-shell.png') no-repeat;
+          background-size: 80% 80%;
+          position: absolute;
+          bottom: 0px;
+          right: 400px;
+          opacity: 0;
+        }
+
+        .marioswim {
+          width: 257px;
+          height: 250px;
+          background: url('../img/char-mario-swim.png') no-repeat;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          opacity: 0;
+        }
+
+        .txtone {
+          width: 192px;
+          height: 64px;
+          background: url('../img/action-text-spin.svg') no-repeat;
+          position: absolute;
+          top: 260px;
+          left: 160px;
+          opacity: 0;
+        }
+
+        .txttwo {
+          width: 219px;
+          height: 61px;
+          background: url('../img/action-text-swim.svg') no-repeat;
+          position: absolute;
+          top: 355px;
+          left: 150px;
+          opacity: 0;
+        }
+
+        .txtthree {
+          width: 295px;
+          height: 62px;
+          background: url('../img/action-text-throw.svg') no-repeat;
+          position: absolute;
+          top: 446px;
+          left: 125px;
+          opacity: 0;
+        }
+      }
+
+      .char-stage2 {
+        width: 100%;
+        height: 890px;
+        background-image: url(../img/action-background-1.png), url(../img/action-background-2.png), url(../img/action-background-3.png);
+        background-repeat: no-repeat;
+        background-size: 45%, 15%, 15%;
+        background-position: center 35%, left 100px, right 595px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .coin {
+          width: 292px;
+          height: 436px;
+          background: url('../img/char-coins.png') no-repeat;
+          position: absolute;
+          left: -90px;
+          bottom: 220px;
+        }
+
+        .mariorun {
+          width: 388px;
+          height: 478px;
+          background: url('../img/char-mario-run.png') no-repeat;
+          position: absolute;
+          left: 0px;
+          bottom: 100px;
+          opacity: 0;
+        }
+
+        .pipe {
+          width: 155px;
+          height: 160px;
+          background: url('../img/char-pipe.png') no-repeat;
+          position: absolute;
+          bottom: -60px;
+          right: 170px;
+          opacity: 0;
+        }
+
+        .mushroom {
+          width: 80px;
+          height: 76px;
+          background: url('../img/char-mushroom.png') no-repeat;
+          position: absolute;
+          top: 76px;
+          right: 203px;
+          // opacity: 0;
+        }
+
+        .brick {
+          width: 339px;
+          height: 85px;
+          background: url('../img/char-brick.png') no-repeat;
+          position: absolute;
+          top: 76px;
+          right: 30px;
+        }
+
+        .smallmario {
+          width: 171px;
+          height: 182px;
+          background: url('../img/char-mario-small.png') no-repeat;
+          position: absolute;
+          left: 221px;
+          top: 48px;
+        }
+
+        .txtone {
+          width: 167px;
+          height: 60px;
+          background: url('../img/action-text-1.svg') no-repeat;
+          position: absolute;
+          right: 179px;
+          bottom: 498px;
+          opacity: 0;
+        }
+
+        .txttwo {
+          width: 221px;
+          height: 60px;
+          background: url('../img/action-text-2.svg') no-repeat;
+          position: absolute;
+          right: 147px;
+          bottom: 405px;
+          opacity: 0;
+        }
+
+        .txtthree {
+          width: 229px;
+          height: 63px;
+          background: url('../img/action-text-3.svg') no-repeat;
+          position: absolute;
+          right: 149px;
+          bottom: 304px;
+          opacity: 0;
+        }
+      }
+
+      .aa {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transition: all .3s
+      }
+
+      .bb {
+        visibility: hidden;
+        opacity: 0;
+        z-index: 0;
+        transition: all .3s
+      }
+    }
+  }
+}
+
+
+// TX完成：
+// 主体部分
+.main {
+
+  // power
+  .power {
+    background: url(../img/bg-dark-yellow_2x.jpg);
+    background-size: 240px 266px;
+    padding: 80px 15px 60px 15px;
+    position: relative;
+    text-align: center;
+
+
+    h2 {
+      font-size: 40px;
+      font-weight: 900;
+      color: #fff;
+      height: 60px;
+      line-height: 60px;
+      margin: 10px auto 0;
+
+      &::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 200px;
+        width: 80%;
+        height: 4px;
+
+      }
+    }
+
+    .coin {
+      background: url(../img/char-coins-corner-top-right_2x.png) no-repeat top right;
+      width: 294px;
+      height: 346px;
+      background-size: 294px 346px;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+    }
+
+    .wall {
+      background: url(../img/char-bricks-used_2x.png) no-repeat top left;
+      width: 929px;
+      height: 85px;
+      background-size: 929px 85px;
+      position: absolute;
+      top: 20%;
+      right: 75%;
+    }
+
+    .powers {
+      width: 1200px;
+      height: 905px;
+      margin: 40px auto 0;
+      position: relative;
+
+
+      .list1 {
+        height: 775px;
+        position: relative;
+        top: 30px;
+        transition: opacity 0.4s ease;
+
+        li {
+          width: 80%;
+          height: 774px;
+          text-align: center;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+
+          span {
+            margin: -30px auto 18px;
+            display: inline-block;
+            height: 76px;
+            background-color: #E60012;
+            border-radius: 38px;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            line-height: 76px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            transition: all .5s;
+          }
+        }
+
+        .show1 {
+          opacity: 1;
+          transition: all .3s;
+        }
+      }
+
+      .next {
+        width: 75px;
+        height: 75px;
+        background: url(../img/button-round-next.svg);
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+
+        &:hover {
+          background: url(../img/button-round-next-hover.svg) top left;
+          cursor: pointer;
+        }
+      }
+
+      .prev {
+        width: 75px;
+        height: 75px;
+        background: url(../img/button-round-prev.svg);
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+
+        &:hover {
+          background: url(../img/button-round-prev-hover.svg) top left;
+          cursor: pointer;
+        }
+      }
+
+
+      .dot {
+        width: 1200px;
+        height: 90px;
+
+        .list2 {
+          height: 90px;
+          margin: 40px auto 0;
+          display: flex;
+          justify-content: center;
+          // text-align: center;
+
+
+          li {
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            a {
+              display: block;
+              width: 68px;
+              height: 68px;
+              border: solid 4px #fff;
+              border-radius: 50%;
+              transition-delay: .25s;
+              transition: all .3s;
+              text-align: center;
+              line-height: 60px;
+
+              img {
+                width: 25px;
+                height: 26px;
+              }
+            }
+
+            &:nth-child(1) a {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // plays
+  .plays {
+    height: 1172.98px;
+    background: url(../img/bg-green-mushroom_2x.jpg);
+    background-size: 340px 341px;
+    padding: 80px 15px 60px 15px;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      height: 60px;
+      line-height: 60px;
+      margin-top: 0;
+      position: relative;
+      top: 0px;
+
+      &::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 200px;
+        width: 80%;
+        height: 4px;
+        margin: 0 auto;
+      }
+    }
+
+    .play_one {
+      width: 1940px;
+      height: 436px;
+      background-size: 3880px 436px;
+      position: relative;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      overflow: hidden;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        background: url(../img/play-feature-1.png) no-repeat left top;
+        width: 3880px;
+        height: 436px;
+        background-size: 3880px 436px;
+        animation: slideLeft 10s linear infinite;
+      }
+
+      &:hover::after {
+        animation-play-state: paused;
+      }
+    }
+
+    .play_two {
+      width: 2913px;
+      height: 436px;
+      background-size: 2913px 436px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 65px;
+      z-index: 2;
+      overflow: hidden;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        background: url(../img/play-feature-2.png) repeat-x left top;
+        width: 5826px;
+        height: 436px;
+        background-size: 2913px 436px;
+        animation: slideRight 10s linear infinite;
+      }
+
+      &:hover::after {
+        animation-play-state: paused;
+      }
+    }
+
+    .coins1 {
+      width: 322px;
+      height: 183px;
+      background: url(../img/char-coins-two-stacked-2_2x.png);
+      background-size: 322px 183px;
+      position: absolute;
+      top: 2%;
+      right: 78%;
+    }
+
+    .coins2 {
+      width: 292px;
+      height: 168px;
+      background: url(../img/char-coins-two-stacked_2x.png) no-repeat;
+      background-size: 292px 168px;
+      position: absolute;
+      bottom: 2%;
+      right: 80%;
+    }
+
+    .coins3 {
+      width: 292px;
+      height: 168px;
+      background: url(../img/char-coins-stacked_2x.png) no-repeat;
+      background-size: 292px 168px;
+      position: absolute;
+      bottom: 2%;
+      left: 80%;
+    }
+  }
+
+  // friends
+  .friends {
+    background: url(../img/bg-blue_2x.jpg);
+    background-size: 190px 211px;
+    padding: 50px 15px 60px 15px;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      height: 60px;
+      line-height: 60px;
+      margin-top: 0;
+      position: relative;
+      top: 45px;
+
+      &::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 200px;
+        width: 80%;
+        height: 4px;
+        margin: 0 auto;
+      }
+    }
+
+    .img_friends {
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        width: 900px;
+      }
+    }
+  }
+
+  // frenemies
+  .frenemies {
+    background: url(../img/bg-black_2x.jpg) repeat center top;
+    background-size: 240px 208px;
+    position: relative;
+    padding-bottom: 60px;
+
+    &::before {
+      content: '';
+      background: url(../img/zigzag-black_2x.png) repeat-x center top;
+      background-size: 240px 17px;
+      position: absolute;
+      top: -15px;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 17px;
+    }
+
+    .img_frenemies {
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 20px;
+
+      img {
+        width: 800px;
+
+      }
+    }
+  }
+}
+
+// 底部部分
+.footer {
+  background: url(../img/ground.png) repeat left top;
+  margin-top: 103px;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: url(../img/leaves.png) repeat-x left top;
+    display: block;
+    height: 103px;
+    width: 100%;
+    position: absolute;
+    top: -103px;
+    left: 0;
+  }
+
+  .row1 {
+    padding-bottom: 26px;
+
+    .foot-share {
+      width: 555px;
+      height: 66px;
+
+      background: #fff;
+      border: 2px solid #E6E6E6;
+      border-radius: 10px;
+      margin: 0 auto;
+      color: #9b9b9b;
+      display: block;
+      position: relative;
+
+      .one,
+      .tow,
+      .three,
+      .four {
+        background: #F8E190;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+      }
+
+      .one {
+        top: 10px;
+        left: 10px;
+      }
+
+      .tow {
+        top: 10px;
+        right: 10px;
+      }
+
+      .three {
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .four {
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .content {
+        height: 100%;
+        display: flex;
+        padding: 0 65px;
+        box-sizing: border-box;
+
+        p {
+          flex: 1;
+          padding: 0 10px;
+          margin: 25px 0;
+          color: #7B7B7B;
+          text-align: center;
+          font-size: 16px;
+        }
+
+        a {
+          flex: 1;
+          display: block;
+          color: #E60012;
+          border: 2px solid #E60012;
+          border-radius: 20px;
+          height: 40px;
+          line-height: 38px;
+          font-weight: 500;
+          text-decoration: none;
+          padding: 0 40px;
+          margin: 12px 36px;
+
+          &:hover {
+            background-color: #E60012;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+
+  // foot-link
+  .foot-link {
+    height: 345px;
+    background-color: #502B25;
+    padding: 80px 15px 60px 15px;
+    box-sizing: border-box;
+    position: relative;
+
+    // 回到顶部
+    .back {
+
+      .back-top {
+        width: 128px;
+        height: 100px;
+        position: absolute;
+        bottom: 337px;
+        right: 10px;
+        overflow: hidden;
+        z-index: 998;
+
+        img {
+          width: 128px;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+        }
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        z-index: 2;
+        width: 128px;
+        height: 68px;
+        background: url(../img/arrow-backtotop.png) no-repeat;
+        background-size: 100%;
+        color: #fff;
+        position: absolute;
+        top: -45px;
+        right: 10px;
+        z-index: 999;
+
+        &:hover .back-top {
+          height: 200px;
+        }
+
+        span {
+          line-height: 70px;
+        }
+      }
+    }
+
+    .link {
+      height: 205px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+
+        .box1 {
+          width: 92px;
+          height: 92px;
+          background: url(../img/logo-amiibo.svg);
+          cursor: pointer;
+        }
+
+        .box2 {
+          width: 288px;
+          height: 90px;
+          padding-bottom: 10px;
+          position: relative;
+
+          p {
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+          }
+
+          a:nth-child(2) img {
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+          }
+
+          a:nth-child(3) img {
+            position: absolute;
+            bottom: 5px;
+            left: 65px;
+          }
+
+          a:nth-child(4) img {
+            position: absolute;
+            bottom: 5px;
+            right: 87px;
+          }
+
+          a:nth-child(5) img {
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+          }
+
+
+          img {
+            display: block;
+            width: 48px;
+            height: 48px;
+            margin-left: 20px;
+            float: left;
+          }
+        }
+
+        .box3 {
+          // width: 235px;
+          height: 92px;
+          cursor: pointer;
+
+          img:nth-child(1) {
+            width: 136px;
+            height: 90px;
+            margin: 0 7px;
+          }
+
+          img:nth-child(2) {
+            width: 66px;
+            height: 90px;
+            margin: 0 7px;
+          }
+        }
+
+        .box4 {
+          text-align: center;
+          margin: 16px auto 30px;
+          width: 96%;
+
+          a {
+            color: #fff;
+            font-size: 12px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          span {
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+
+        .box5 {
+          margin: 0 auto;
+          position: absolute;
+          bottom: -20px;
+          // right: 25%;
+          left: 50%;
+          transform: translateX(-50%);
+
+          .copy {
+            text-align: center;
+            color: #fff;
+            font-size: 10px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+
+      .box1,
+      .box2,
+      .box3 {
+        margin: 16px;
+      }
+    }
+  }
+}

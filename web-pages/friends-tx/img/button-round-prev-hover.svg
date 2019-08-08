@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>button-round-prev-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="7" y="7" width="61" height="61" rx="30.5"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="portal-mario-about-about-desktop" transform="translate(-180.000000, -1986.000000)">
+            <g id="power-ups-section" transform="translate(-579.000000, 1513.000000)">
+                <g id="button-round-prev-hover" transform="translate(759.000000, 473.000000)">
+                    <rect id="Rectangle-7" fill="#E60012" x="0" y="0" width="75" height="75" rx="37.5"></rect>
+                    <g id="Rectangle-7">
+                        <use fill="#E60012" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#FFFFFF" stroke-width="3" x="5.5" y="5.5" width="64" height="64" rx="32"></rect>
+                    </g>
+                    <polygon id="Triangle" fill="#FFFFFF" points="23 38 44 20 44 56"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

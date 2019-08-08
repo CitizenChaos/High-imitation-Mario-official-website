@@ -1,0 +1,1185 @@
+// 公共类：
+body {
+    background: url(../img/bg-dots.jpg);
+}
+
+.container {
+    width: 1286px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    outline-style: none;
+}
+
+.active {
+    transform: scale(1) translateY(-50%);
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+
+
+// WY完成：
+// 导航栏
+.nav {
+    height: 72px;
+
+    .bgc {
+        background-color: #fff;
+    }
+
+    .top-nav {
+        height: 42px;
+        background-color: #fff;
+        position: relative;
+        padding-right: 110px;
+
+        input {
+            width: 355px;
+            height: 34px;
+            border-radius: 20px;
+            padding: 0 15px;
+            margin: 4px 0;
+            color: #888;
+            transition: color 200ms ease-in-out;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 170px;
+            line-height: 42px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #888;
+        }
+
+        .loading {
+            margin-top: 6px;
+            width: 30px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+
+        .logo {
+            width: 165px;
+            height: 110px;
+            position: absolute;
+            left: 0px;
+            top: -25px;
+            z-index: 1000;
+            border-radius: 0 0 15px 15px;
+            transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+            background: url('../img/logo-nintendo.svg') no-repeat center 50px;
+            background-color: #E60012;
+        }
+
+        .logo:hover {
+            transform: translateY(20px);
+            transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    }
+
+    .box {
+        background-color: #dadada;
+
+        .bottom-nav {
+            height: 30px;
+            padding-left: 200px;
+            line-height: 30px;
+            background-color: #dadada;
+
+            ul {
+                li {
+                    float: left;
+                    width: 14.28%;
+                    text-align: center;
+                    transition: color 0.3s, background 0.3s;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                    }
+
+                    a:hover {
+                        color: #888;
+                        text-decoration: none;
+                    }
+                }
+
+                li:nth-child(1):hover {
+                    background-color: #fff;
+
+                    a {
+                        color: #000;
+                    }
+                }
+
+                li:nth-child(2):hover {
+                    background-color: #CE181E;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                li:nth-child(3):hover {
+                    background-color: #FF7D00;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                li:nth-child(4):hover {
+                    background-color: #fff;
+
+                    a {
+                        color: #000;
+                    }
+                }
+
+                li:nth-child(5):hover {
+                    background-color: #FF3F3F;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                li:nth-child(6):hover {
+                    background-color: #00BFF3;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+
+                li:nth-child(7):hover {
+                    background-color: #fff;
+
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 透明固定导航
+.opacitynav {
+    height: 55px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: -webkit-sticky;
+    position: sticky;
+    float: left;
+    top: 0;
+    z-index: 999;
+
+    .box {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 200px;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            line-height: 55px;
+            text-align: center;
+
+            li {
+                float: left;
+                flex: 1;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    font-weight: 900;
+                    color: #fff;
+                    font-size: 14px;
+                    // 笑笑添加的字体
+                    font-family: Arial, Helvetica, sans-serif;
+                    letter-spacing: 2px;
+                }
+            }
+
+            // li:nth-child(2) a {
+            //     color: #FFD200;
+            // }
+
+            li:nth-child(3) img {
+                height: 45px;
+            }
+
+            li:hover a {
+                color: #FFD200;
+            }
+        }
+    }
+}
+
+
+// TX完成：
+// 主题部分：topic
+.topic {
+    height: 555px;
+    background: url(../img/theme-pattern-mk-generic-blue.png);
+
+    .detail {
+        height: 555px;
+        display: flex;
+        position: relative;
+
+
+        .content {
+            flex: 1;
+            height: 500px;
+            padding: 0 60px;
+            box-sizing: border-box;
+
+            h1 {
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 70px;
+                color: #484848;
+
+
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+
+            p:nth-of-type(1) {
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                line-height: 50px;
+                color: #484848;
+
+            }
+
+            p:nth-of-type(2) {
+                font-size: 16px;
+                color: #484848;
+            }
+        }
+
+
+        .pic {
+            flex: 1;
+            height: 100%;
+            margin-right: 100px;
+            // opacity: 0;
+
+            img {
+                height: 530px;
+                position: absolute;
+                top: -30px;
+                right: 100px;
+            }
+        }
+    }
+}
+
+
+// Friends轮播图：
+#tab {
+    height: 180px;
+    // background-color: #E3E3E3;
+    background: url('../img/pattern-yoshi.gif');
+
+    a {
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+    }
+
+    .swiper-button-prev {
+        background: url('');
+
+        img {
+            position: absolute;
+            top: -19px;
+            left: 30px;
+            width: 88px;
+            height: 88px;
+        }
+    }
+
+    .swiper-button-next {
+        background: url('');
+
+        img {
+            position: absolute;
+            top: -19px;
+            left: -84px;
+            width: 88px;
+            height: 88px;
+            transform: scaleX(-1);
+        }
+
+
+    }
+}
+
+
+// 主体部分
+.main {
+    margin: 60px auto;
+
+    .list {
+        overflow: hidden;
+        // margin-left: 60px;// 用版心替代
+
+        .lis {
+            // width: 200px;
+            width: 16%;
+            height: 206px;
+            float: left;
+            // margin-right: 40px;
+            margin-bottom: 30px;
+
+            .link {
+                // 转成块之后，宽高直接用父元素的就行，直接100%
+                position: relative;
+                width: 80%;
+                height: 80%;
+                display: block;
+                // text-align: center;
+                margin: 0 auto;
+
+                .front {
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    // background-image: url(../img/profile-mk-mario.png);
+                    z-index: 1;
+                    backface-visibility: hidden;
+                }
+
+                .front,
+                .back {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    border-radius: 50%;
+                    transition: transform 0.8s ease-out;
+                }
+
+                .back {
+                    width: 100%;
+                    height: 100%;
+                    // background-color: #00d2ff;
+                }
+
+
+                .title {
+                    position: relative;
+
+                    p {
+                        width: 100px;
+                        font-weight: bold;
+                        color: #484848;
+                        font-size: 14px;
+                        text-align: center;
+                        position: absolute;
+                        top: 180px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+            }
+
+            &:hover .front,
+            &:hover .back {
+                transform: rotateY(360deg);
+            }
+        }
+
+
+        // 第一行
+        .lis:nth-child(1) .link .front {
+            background-image: url(../img/profile-mk-mario.png);
+        }
+
+        .lis:nth-child(1) .link .back {
+            background-color: #00d2ff;
+        }
+
+        .lis:nth-child(2) .link .front {
+            background-image: url(../img/profile-mk-luigi.png);
+        }
+
+        .lis:nth-child(2) .link .back {
+            background-color: #b42ff5;
+        }
+
+        .lis:nth-child(3) .link .front {
+            background-image: url(../img/profile-mk-peach.png);
+        }
+
+        .lis:nth-child(3) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+        .lis:nth-child(4) .link .front {
+            background-image: url(../img/profile-mk-daisy.png);
+        }
+
+        .lis:nth-child(4) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(5) .link .front {
+            background-image: url(../img/profile-mk-yoshi.png);
+        }
+
+        .lis:nth-child(5) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(6) .link .front {
+            background-image: url(../img/profile-mk-bowser.png);
+        }
+
+        .lis:nth-child(6) .link .back {
+            background-color: #484848;
+        }
+
+
+
+
+
+        // 第二行：
+
+        .lis:nth-child(7) .link .front {
+            background-image: url(../img/profile-mk-baby-mario.png);
+        }
+
+        .lis:nth-child(7) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(8) .link .front {
+            background-image: url(../img/profile-mk-baby-luigi.png);
+        }
+
+        .lis:nth-child(8) .link .back {
+            background-color: #b42ff5;
+
+        }
+
+
+        .lis:nth-child(9) .link .front {
+            background-image: url(../img/profile-mk-waluigi.png);
+        }
+
+        .lis:nth-child(9) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+        .lis:nth-child(10) .link .front {
+            background-image: url(../img/profile-mk-toad.png);
+        }
+
+        .lis:nth-child(10) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(11) .link .front {
+            background-image: url(../img/profile-mk-toadette.png);
+        }
+
+        .lis:nth-child(11) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(12) .link .front {
+            background-image: url(../img/profile-mk-shyguy.png);
+        }
+
+        .lis:nth-child(12) .link .back {
+            background-color: #DADADA;
+        }
+
+        // .lis:nth-child(6) {
+        //     margin-right: 0px;
+        // }
+
+
+
+        // 第三行：
+
+        .lis:nth-child(13) .link .front {
+            background-image: url(../img/profile-dk-dixiekong.png);
+        }
+
+        .lis:nth-child(13) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(14) .link .front {
+            background-image: url(../img/profile-cappy.jpg);
+        }
+
+        .lis:nth-child(14) .link .back {
+            background-color: #E70012;
+
+        }
+
+
+        .lis:nth-child(15) .link .front {
+            background-image: url(../img/profile-dk-donkeykong.png);
+        }
+
+        .lis:nth-child(15) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(16) .link .front {
+            background-image: url(../img/profile-dk-diddykong.png);
+        }
+
+        .lis:nth-child(16) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(17) .link .front {
+            background-image: url(../img/profile-dk-funkykong.png);
+        }
+
+        .lis:nth-child(17) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(18) .link .front {
+            background-image: url(../img/profile-dk-snowmads.png);
+        }
+
+        .lis:nth-child(18) .link .back {
+            background-color: #DADADA;
+        }
+
+
+
+
+        // 第四行：
+
+        .lis:nth-child(19) .link .front {
+            background-image: url(../img/profile-zelda-sheik.png);
+        }
+
+        .lis:nth-child(19) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(20) .link .front {
+            background-image: url(../img/profile-zelda-zelda.png);
+        }
+
+        .lis:nth-child(20) .link .back {
+            background-color: #b42ff5;
+
+        }
+
+
+        .lis:nth-child(21) .link .front {
+            background-image: url(../img/profile-zelda-gorons.png);
+        }
+
+        .lis:nth-child(21) .link .back {
+            background-color: #464646;
+        }
+
+
+        .lis:nth-child(22) .link .front {
+            background-image: url(../img/profile-mk-toad.png);
+        }
+
+        .lis:nth-child(22) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(23) .link .front {
+            background-image: url(../img/profile-dk-tikitak.png);
+        }
+
+        .lis:nth-child(23) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(24) .link .front {
+            background-image: url(../img/profile-zelda-link.png);
+        }
+
+        .lis:nth-child(24) .link .back {
+            background-color: #DADADA;
+        }
+
+
+
+        // 第五行：
+        .lis:nth-child(25) .link .front {
+            background-image: url(../img/profile-starfox-fox.png);
+        }
+
+        .lis:nth-child(25) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(26) .link .front {
+            background-image: url(../img/profile-mk-rosalina.png);
+        }
+
+        .lis:nth-child(26) .link .back {
+            background-color: #b42ff5;
+
+        }
+
+
+        .lis:nth-child(27) .link .front {
+            background-image: url(../img/profile-pikmin-olimar.jpg);
+        }
+
+        .lis:nth-child(27) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+        .lis:nth-child(28) .link .front {
+            background-image: url(../img/profile-starfox-peppy.png);
+        }
+
+        .lis:nth-child(28) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(29) .link .front {
+            background-image: url(../img/profile-starfox-slippy.png);
+        }
+
+        .lis:nth-child(29) .link .back {
+            background-color: #DADADA;
+        }
+
+
+        .lis:nth-child(30) .link .front {
+            background-image: url(../img/profile-starfox-falco.png);
+        }
+
+        .lis:nth-child(30) .link .back {
+            background-color: #a7a7a5;
+        }
+
+
+
+        // 第六行：
+        .lis:nth-child(31) .link .front {
+            background-image: url(../img/profile-kirby-susie.png);
+        }
+
+        .lis:nth-child(31) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(32) .link .front {
+            background-image: url(../img/profile-kirby-metaknight.png);
+        }
+
+        .lis:nth-child(32) .link .back {
+            background-color: #b42ff5;
+
+        }
+
+
+        .lis:nth-child(33) .link .front {
+            background-image: url(../img/profile-kirby-kingdedede.png);
+        }
+
+        .lis:nth-child(33) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+        .lis:nth-child(34) .link .front {
+            background-image: url(../img/profile-kirby-waddledee.png);
+        }
+
+        .lis:nth-child(34) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(35) .link .front {
+            background-image: url(../img/profile-kirby-kirby.png);
+        }
+
+        .lis:nth-child(35) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(36) .link .front {
+            background-image: url(../img/profile-mk-goomba.png);
+        }
+
+        .lis:nth-child(36) .link .back {
+            background-color: #DADADA;
+        }
+
+
+
+        // 第七行：
+        .lis:nth-child(37) .link .front {
+            background-image: url(../img/profile-splatoon-captaincuttlefish.jpg);
+        }
+
+        .lis:nth-child(37) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(38) .link .front {
+            background-image: url(../img/profile-splatoon-calliemarie.jpg);
+        }
+
+        .lis:nth-child(38) .link .back {
+            background-color: #b42ff5;
+
+        }
+
+
+        .lis:nth-child(39) .link .front {
+            background-image: url(../img/profile-arms-twintelle.png);
+        }
+
+        .lis:nth-child(39) .link .back {
+            background-color: #D3C77F;
+        }
+
+
+        .lis:nth-child(40) .link .front {
+            background-image: url(../img/profile-splatoon-pearlmarina.jpg);
+        }
+
+        .lis:nth-child(40) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(41) .link .front {
+            background-image: url(../img/profile-splatoon-flow-craymond.jpg);
+        }
+
+        .lis:nth-child(41) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(42) .link .front {
+            background-image: url(../img/profile-splatoon-inklings.jpg);
+        }
+
+        .lis:nth-child(42) .link .back {
+            background-color: #a7a7a5;
+        }
+
+
+
+        // 第八行：
+        .lis:nth-child(43) .link .front {
+            background-image: url(../img/profile-mk-baby-mario.png);
+        }
+
+        .lis:nth-child(43) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+
+        .lis:nth-child(44) .link .front {
+            background-image: url(../img/profile-mk-baby-luigi.png);
+        }
+
+        .lis:nth-child(44) .link .back {
+            background-color: #b42ff5;
+
+        }
+
+
+        .lis:nth-child(45) .link .front {
+            background-image: url(../img/profile-mk-waluigi.png);
+        }
+
+        .lis:nth-child(45) .link .back {
+            background-color: #00d2ff;
+        }
+
+
+        .lis:nth-child(46) .link .front {
+            background-image: url(../img/profile-mk-toad.png);
+        }
+
+        .lis:nth-child(46) .link .back {
+            background-color: #1ddb81;
+        }
+
+
+        .lis:nth-child(47) .link .front {
+            background-image: url(../img/profile-mk-toadette.png);
+        }
+
+        .lis:nth-child(47) .link .back {
+            background-color: #fff000;
+        }
+
+
+        .lis:nth-child(48) .link .front {
+            background-image: url(../img/profile-mk-shyguy.png);
+        }
+
+        .lis:nth-child(48) .link .back {
+            background-color: #a7a7a5;
+        }
+    }
+}
+
+
+// 底部部分
+.footer {
+    background: url(../img/ground.png) repeat left top;
+    margin-top: 103px;
+    position: relative;
+
+    &:before {
+        content: '';
+        background: url(../img/leaves.png) repeat-x left top;
+        display: block;
+        height: 103px;
+        width: 100%;
+        position: absolute;
+        top: -103px;
+        left: 0;
+    }
+
+    .row1 {
+        padding-bottom: 26px;
+
+        .foot-share {
+            width: 555px;
+            height: 66px;
+
+            background: #fff;
+            border: 2px solid #E6E6E6;
+            border-radius: 10px;
+            margin: 0 auto;
+            color: #9b9b9b;
+            display: block;
+            position: relative;
+
+            .one,
+            .tow,
+            .three,
+            .four {
+                background: #F8E190;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+            }
+
+            .one {
+                top: 10px;
+                left: 10px;
+            }
+
+            .tow {
+                top: 10px;
+                right: 10px;
+            }
+
+            .three {
+                bottom: 10px;
+                left: 10px;
+            }
+
+            .four {
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .content {
+                height: 100%;
+                display: flex;
+                padding: 0 65px;
+                box-sizing: border-box;
+
+                p {
+                    flex: 1;
+                    padding: 0 10px;
+                    margin: 25px 0;
+                    color: #7B7B7B;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                a {
+                    flex: 1;
+                    display: block;
+                    color: #E60012;
+                    border: 2px solid #E60012;
+                    border-radius: 20px;
+                    height: 40px;
+                    line-height: 38px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    padding: 0 40px;
+                    margin: 12px 36px;
+
+                    &:hover {
+                        background-color: #E60012;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // foot-link
+    .foot-link {
+        height: 345px;
+        background-color: #502B25;
+        padding: 80px 15px 60px 15px;
+        box-sizing: border-box;
+        position: relative;
+
+        // 回到顶部
+        .back {
+
+            .back-top {
+                width: 128px;
+                height: 100px;
+                position: absolute;
+                bottom: 350px;
+                right: 10px;
+                overflow: hidden;
+                z-index: 998;
+
+                img {
+                    width: 128px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                }
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                z-index: 2;
+                width: 128px;
+                height: 68px;
+                background: url(../img/arrow-backtotop.png) no-repeat;
+                background-size: 100%;
+                color: #fff;
+                position: absolute;
+                top: -45px;
+                right: 10px;
+                z-index: 999;
+
+                &:hover .back-top {
+                    height: 200px;
+                }
+
+                span {
+                    line-height: 70px;
+                }
+            }
+        }
+
+        .link {
+            height: 205px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                position: relative;
+
+                .box1 {
+                    width: 92px;
+                    height: 92px;
+                    background: url(../img/logo-amiibo.svg);
+                    cursor: pointer;
+                }
+
+                .box2 {
+                    width: 288px;
+                    height: 90px;
+                    padding-bottom: 10px;
+                    position: relative;
+
+                    p {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+
+                    a:nth-child(2) img {
+                        position: absolute;
+                        bottom: 5px;
+                        left: 0px;
+                    }
+
+                    a:nth-child(3) img {
+                        position: absolute;
+                        bottom: 5px;
+                        left: 65px;
+                    }
+
+                    a:nth-child(4) img {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 87px;
+                    }
+
+                    a:nth-child(5) img {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 20px;
+                    }
+
+
+                    img {
+                        display: block;
+                        width: 48px;
+                        height: 48px;
+                        margin-left: 20px;
+                        float: left;
+                    }
+                }
+
+                .box3 {
+                    // width: 235px;
+                    height: 92px;
+                    cursor: pointer;
+
+                    img:nth-child(1) {
+                        width: 136px;
+                        height: 90px;
+                        margin: 0 7px;
+                    }
+
+                    img:nth-child(2) {
+                        width: 66px;
+                        height: 90px;
+                        margin: 0 7px;
+                    }
+                }
+
+                .box4 {
+                    text-align: center;
+                    margin: 16px auto 30px;
+                    width: 96%;
+
+                    a {
+                        color: #fff;
+                        font-size: 12px;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    span {
+                        color: #fff;
+                        font-size: 12px;
+                    }
+                }
+
+                .box5 {
+                    margin: 0 auto;
+                    position: absolute;
+                    bottom: -20px;
+                    // right: 25%;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    .copy {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 10px;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+
+            .box1,
+            .box2,
+            .box3 {
+                margin: 16px;
+            }
+        }
+    }
+}

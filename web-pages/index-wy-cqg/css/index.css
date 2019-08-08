@@ -1,0 +1,1242 @@
+.container {
+  width: 1286px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+a {
+  color: #888;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+input {
+  outline-style: none;
+}
+.nav {
+  height: 72px;
+}
+.nav .top-nav {
+  height: 42px;
+  background-color: #fff;
+  position: relative;
+  padding-right: 110px;
+}
+.nav .top-nav input {
+  width: 355px;
+  height: 34px;
+  border-radius: 20px;
+  padding: 0 15px;
+  margin: 4px 0;
+  color: #888;
+  transition: color 200ms ease-in-out;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+.nav .top-nav span {
+  position: absolute;
+  top: 0;
+  right: 170px;
+  line-height: 42px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #888;
+}
+.nav .top-nav .loading {
+  margin-top: 6px;
+  width: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.nav .top-nav .logo {
+  width: 165px;
+  height: 110px;
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  z-index: 1000;
+  border-radius: 0 0 15px 15px;
+  transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: url('../images/logo-nintendo.svg') no-repeat center 50px;
+  background-color: #E60012;
+}
+.nav .top-nav .logo:hover {
+  transform: translateY(20px);
+  transition: transform 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav .top-nav .nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav .box {
+  background-color: #dadada;
+}
+.nav .box .bottom-nav {
+  height: 30px;
+  padding-left: 200px;
+  line-height: 30px;
+  background-color: #dadada;
+}
+.nav .box .bottom-nav ul li {
+  float: left;
+  width: 14.28%;
+  text-align: center;
+  transition: color 0.3s, background 0.3s;
+}
+.nav .box .bottom-nav ul li a {
+  display: inline-block;
+  width: 100%;
+}
+.nav .box .bottom-nav ul li a:hover {
+  color: #888;
+  text-decoration: none;
+}
+.nav .box .bottom-nav ul li:nth-child(1):hover {
+  background-color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(1):hover a {
+  color: #000;
+}
+.nav .box .bottom-nav ul li:nth-child(2):hover {
+  background-color: #CE181E;
+}
+.nav .box .bottom-nav ul li:nth-child(2):hover a {
+  color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(3):hover {
+  background-color: #FF7D00;
+}
+.nav .box .bottom-nav ul li:nth-child(3):hover a {
+  color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(4):hover {
+  background-color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(4):hover a {
+  color: #000;
+}
+.nav .box .bottom-nav ul li:nth-child(5):hover {
+  background-color: #FF3F3F;
+}
+.nav .box .bottom-nav ul li:nth-child(5):hover a {
+  color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(6):hover {
+  background-color: #00BFF3;
+}
+.nav .box .bottom-nav ul li:nth-child(6):hover a {
+  color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(7):hover {
+  background-color: #fff;
+}
+.nav .box .bottom-nav ul li:nth-child(7):hover a {
+  color: #000;
+}
+.opacitynav {
+  height: 55px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: -webkit-sticky;
+  position: sticky;
+  float: left;
+  top: 0;
+  z-index: 999;
+}
+.opacitynav .box {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+}
+.opacitynav .box ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 55px;
+  text-align: center;
+}
+.opacitynav .box ul li {
+  float: left;
+  flex: 1;
+}
+.opacitynav .box ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 900;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+.opacitynav .box ul li:nth-child(1) a {
+  color: #FFD200;
+}
+.opacitynav .box ul li:nth-child(3) img {
+  height: 45px;
+}
+.opacitynav .box ul li:hover a {
+  color: #FFD200;
+}
+.main {
+  height: 640px;
+  background: url('../images/bg-red_2x.jpg');
+}
+.main .main_content {
+  height: 100%;
+}
+.main .main_content .left {
+  width: 60%;
+  height: 585px;
+}
+.main .main_content .left .txt {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+.main .main_content .left .line {
+  margin: 0 auto;
+  display: block;
+  width: 140px;
+  height: 4px;
+  background-color: #fff;
+}
+.main .main_content .left .mario_logo {
+  margin: 30px auto;
+  width: 520px;
+  height: 120px;
+  background: url('../images/txt-mario.svg') no-repeat center center;
+}
+.main .main_content .left .paragraph {
+  text-align: center;
+  margin: 0 auto;
+  width: 520px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main .main_content .left .threepipes {
+  height: 218px;
+  width: 520px;
+  margin: 30px auto 0;
+  position: relative;
+}
+.main .main_content .left .threepipes .one,
+.main .main_content .left .threepipes .two,
+.main .main_content .left .threepipes .three {
+  width: 173px;
+  height: 100%;
+  position: absolute;
+  top: 230px;
+  text-align: center;
+  line-height: 42px;
+  background: url(../images/wrap-pipe.png) no-repeat center top;
+}
+.main .main_content .left .threepipes .one a,
+.main .main_content .left .threepipes .two a,
+.main .main_content .left .threepipes .three a {
+  display: block;
+  width: 170px;
+  height: 50px;
+  margin-top: 70px;
+  border: 4px solid #f00;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #f00;
+  font-weight: 900;
+}
+.main .main_content .left .threepipes .one a:hover,
+.main .main_content .left .threepipes .two a:hover,
+.main .main_content .left .threepipes .three a:hover {
+  border: 4px solid #fff;
+  background-color: #f00;
+  color: #fff;
+}
+.main .main_content .left .threepipes .one {
+  left: 0;
+}
+.main .main_content .left .threepipes .two {
+  left: 33.33%;
+}
+.main .main_content .left .threepipes .three {
+  left: 66.66%;
+}
+.main .main_content .right {
+  width: 40%;
+  height: 585px;
+  position: relative;
+}
+.main .main_content .right .one {
+  position: absolute;
+  left: -20px;
+  bottom: -90px;
+  opacity: 0;
+  z-index: 2;
+}
+.main .main_content .right .one img {
+  display: block;
+  width: 110%;
+  height: 110%;
+}
+.main .main_content .right .two {
+  position: absolute;
+  left: 15px;
+  bottom: -130px;
+  z-index: 3;
+}
+.main .main_content .right .two img {
+  display: block;
+  width: 0%;
+  height: 0%;
+}
+.main .main_content .right .three {
+  position: absolute;
+  left: 0px;
+  bottom: -40px;
+  opacity: 0;
+  z-index: 1;
+}
+.main .main_content .right .three img {
+  display: block;
+  width: 110%;
+  height: 110%;
+}
+.main .main_content .right .four {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  z-index: 0;
+}
+.main .main_content .right .four img {
+  display: block;
+  width: 340px;
+  height: 160px;
+}
+.video {
+  height: 875px;
+  position: relative;
+  z-index: 4;
+}
+.video .bgi {
+  width: 100%;
+  height: 100%;
+  background: url('../images/bg-smash-blur.jpg') no-repeat center top;
+  background-size: 100% auto;
+}
+.video .videocard {
+  width: 930px;
+  height: 540px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+.video .videocard .mp4 {
+  width: 908px;
+  height: 510px;
+  margin: 15px auto;
+  background: url('../images/bg-smash.jpg') 908px 510px;
+  cursor: pointer;
+}
+.video .videocard .mp4:hover .playin {
+  transform: scale(1.2);
+}
+.video .videocard .mp4 video {
+  display: none;
+  width: 908px;
+  height: 510px;
+}
+.video .videocard .mp4 .playout {
+  width: 77px;
+  height: 77px;
+  background: url('../images/playout.png');
+  background-size: 77px 77px;
+  margin: 216px auto;
+}
+.video .videocard .mp4 .playout .playin {
+  width: 26px;
+  height: 30px;
+  background: url('../images/playin.png');
+  background-size: 26px 30px;
+  margin: 23px 30px;
+  transition: transform .3s;
+}
+.video .textcard {
+  width: 930px;
+  height: 140px;
+  position: absolute;
+  top: 685px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+.video .textcard .one,
+.video .textcard .two,
+.video .textcard .three,
+.video .textcard .four {
+  width: 8px;
+  height: 8px;
+  background-color: #F8E190;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+}
+.video .textcard .one {
+  top: 15px;
+  left: 15px;
+}
+.video .textcard .two {
+  top: 15px;
+  right: 15px;
+}
+.video .textcard .three {
+  bottom: 15px;
+  left: 15px;
+}
+.video .textcard .four {
+  bottom: 15px;
+  right: 15px;
+}
+.video .textcard p {
+  font-size: 16px;
+  color: #888;
+  padding: 40px 40px;
+}
+.video .topdivide {
+  position: absolute;
+  top: -27px;
+  height: 128px;
+  width: 100%;
+  background: url('../images/bg-blocks.png');
+}
+.game {
+  height: 812px;
+  background: url('../images/bg-green_2x.jpg');
+  padding-top: 40px;
+}
+.game .title {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+.game .line {
+  width: 200px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 auto 40px;
+}
+.game .items {
+  height: 536px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.game .items .one,
+.game .items .two,
+.game .items .three,
+.game .items .four,
+.game .items .five,
+.game .items .six {
+  width: 380px;
+  height: 268px;
+  z-index: 1;
+  cursor: pointer;
+}
+.game .items .one .gamecard,
+.game .items .two .gamecard,
+.game .items .three .gamecard,
+.game .items .four .gamecard,
+.game .items .five .gamecard,
+.game .items .six .gamecard {
+  width: 360px;
+  height: 248px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 10px;
+  text-align: center;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+.game .items .one .gamecard img,
+.game .items .two .gamecard img,
+.game .items .three .gamecard img,
+.game .items .four .gamecard img,
+.game .items .five .gamecard img,
+.game .items .six .gamecard img {
+  width: 95%;
+  margin-bottom: 10px;
+}
+.game .items .one .gamecard p,
+.game .items .two .gamecard p,
+.game .items .three .gamecard p,
+.game .items .four .gamecard p,
+.game .items .five .gamecard p,
+.game .items .six .gamecard p {
+  text-align: left;
+  padding-left: 10px;
+  color: #f00;
+}
+.game .items .onehide,
+.game .items .twohide,
+.game .items .threehide,
+.game .items .fourhide,
+.game .items .fivehide,
+.game .items .sixhide {
+  width: 360px;
+  height: 288px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  opacity: 0;
+  padding-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.game .items .onehide img,
+.game .items .twohide img,
+.game .items .threehide img,
+.game .items .fourhide img,
+.game .items .fivehide img,
+.game .items .sixhide img {
+  width: 95%;
+  margin-bottom: 10px;
+}
+.game .items .onehide p,
+.game .items .twohide p,
+.game .items .threehide p,
+.game .items .fourhide p,
+.game .items .fivehide p,
+.game .items .sixhide p {
+  text-align: left;
+  padding-left: 10px;
+  color: #f00;
+}
+.game .items .onehide .learnmore,
+.game .items .twohide .learnmore,
+.game .items .threehide .learnmore,
+.game .items .fourhide .learnmore,
+.game .items .fivehide .learnmore,
+.game .items .sixhide .learnmore {
+  width: 250px;
+  height: 30px;
+  border-radius: 15px;
+  border: 3px solid #1A5EBC;
+  font-size: 14px;
+  color: #1A5EBC;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+.game .items .onehide .learnmore:hover,
+.game .items .twohide .learnmore:hover,
+.game .items .threehide .learnmore:hover,
+.game .items .fourhide .learnmore:hover,
+.game .items .fivehide .learnmore:hover,
+.game .items .sixhide .learnmore:hover {
+  border: 3px solid #fff;
+  color: #fff;
+  background-color: #1A5EBC;
+}
+.game .items .onehide {
+  top: 0;
+  left: 83px;
+}
+.game .items .twohide {
+  top: 0;
+  left: 463px;
+}
+.game .items .threehide {
+  top: 0;
+  left: 843px;
+}
+.game .items .fourhide {
+  top: 268px;
+  left: 83px;
+}
+.game .items .fivehide {
+  top: 268px;
+  left: 463px;
+}
+.game .items .sixhide {
+  top: 268px;
+  left: 843px;
+}
+.game .items .coin {
+  width: 292px;
+  height: 168px;
+  background: url('../images/char-coins-two-stacked_2x.png');
+  background-size: 292px 168px;
+  position: absolute;
+  left: -95px;
+  bottom: -80px;
+}
+.game .items .moregames {
+  font-size: 18px;
+  color: #fff;
+  padding-top: 20px;
+}
+.game .items .moregames a {
+  color: #fff;
+  font-weight: 700;
+  padding: 0 15px;
+}
+.game .items .moregames a:hover {
+  color: #f00;
+}
+.game .items .flower {
+  width: 424px;
+  height: 173px;
+  background: url('../images/char-brick-flower_2x.png');
+  background-size: 424px 173px;
+  position: absolute;
+  top: -130px;
+  right: -235px;
+  z-index: 0;
+}
+.amiibo {
+  height: 673px;
+  background: url('../images/bg-yellow_2x.jpg');
+  padding-top: 40px;
+}
+.amiibo .title {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+.amiibo .line {
+  width: 200px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 auto 40px;
+}
+.amiibo .box {
+  height: 361px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.amiibo .box .one,
+.amiibo .box .two,
+.amiibo .box .three,
+.amiibo .box .four {
+  width: 285px;
+  position: relative;
+  z-index: 1;
+}
+.amiibo .box .one .card,
+.amiibo .box .two .card,
+.amiibo .box .three .card,
+.amiibo .box .four .card {
+  width: 261px;
+  height: 336px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.amiibo .box .one .card .lt,
+.amiibo .box .two .card .lt,
+.amiibo .box .three .card .lt,
+.amiibo .box .four .card .lt,
+.amiibo .box .one .card .rt,
+.amiibo .box .two .card .rt,
+.amiibo .box .three .card .rt,
+.amiibo .box .four .card .rt,
+.amiibo .box .one .card .lb,
+.amiibo .box .two .card .lb,
+.amiibo .box .three .card .lb,
+.amiibo .box .four .card .lb,
+.amiibo .box .one .card .rb,
+.amiibo .box .two .card .rb,
+.amiibo .box .three .card .rb,
+.amiibo .box .four .card .rb {
+  width: 8px;
+  height: 8px;
+  background-color: #F8E190;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+}
+.amiibo .box .one .card .lt,
+.amiibo .box .two .card .lt,
+.amiibo .box .three .card .lt,
+.amiibo .box .four .card .lt {
+  top: 10px;
+  left: 25px;
+}
+.amiibo .box .one .card .rt,
+.amiibo .box .two .card .rt,
+.amiibo .box .three .card .rt,
+.amiibo .box .four .card .rt {
+  top: 10px;
+  right: 25px;
+}
+.amiibo .box .one .card img,
+.amiibo .box .two .card img,
+.amiibo .box .three .card img,
+.amiibo .box .four .card img {
+  width: 100%;
+}
+.amiibo .box .one .card .lb,
+.amiibo .box .two .card .lb,
+.amiibo .box .three .card .lb,
+.amiibo .box .four .card .lb {
+  bottom: 35px;
+  left: 25px;
+}
+.amiibo .box .one .card .rb,
+.amiibo .box .two .card .rb,
+.amiibo .box .three .card .rb,
+.amiibo .box .four .card .rb {
+  bottom: 35px;
+  right: 25px;
+}
+.amiibo .box .one .card p,
+.amiibo .box .two .card p,
+.amiibo .box .three .card p,
+.amiibo .box .four .card p {
+  text-align: center;
+  color: #f00;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.amiibo .box .coin {
+  width: 294px;
+  height: 346px;
+  background: url('../images/char-coins-corner-top-right_2x.png');
+  background-size: 294px 346px;
+  position: absolute;
+  top: -135px;
+  right: -35px;
+}
+.amiibo .box .brick {
+  width: 929px;
+  height: 85px;
+  background: url('../images/char-bricks-used_2x.png');
+  background-size: 929px 85px;
+  position: absolute;
+  bottom: -110px;
+  left: -700px;
+}
+.amiibo .more {
+  width: 476px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 0 auto;
+  border: 3px solid #f00;
+  margin-top: 35px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.amiibo .more p {
+  color: #f00;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 44px;
+}
+.amiibo .more:hover {
+  border: 3px solid #fff;
+  background-color: #f00;
+}
+.amiibo .more:hover p {
+  color: #fff;
+}
+.activity {
+  width: 100%;
+  height: 710.88px;
+  background: url(../images/页面背景.jpg) no-repeat center center;
+  background-size: cover;
+}
+.activity .content {
+  height: 600px;
+  position: relative;
+}
+.activity img {
+  position: absolute;
+  top: -15px;
+  left: 50px;
+}
+.activity .container > h2 {
+  display: block;
+  font-size: 36px;
+  font-weight: 900;
+  color: aliceblue;
+  position: absolute;
+  top: 50px;
+  left: 480px;
+}
+.activity .gang {
+  width: 200px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 110px;
+  left: 630px;
+}
+.activity .box {
+  width: 780px;
+  height: 380px;
+  position: absolute;
+  top: 165px;
+  left: 380px;
+}
+.activity .box .one,
+.activity .box .two,
+.activity .box .three,
+.activity .box .four {
+  position: relative;
+  width: 380px;
+  height: 180px;
+  transition: all .2s;
+}
+.activity .box .one:hover,
+.activity .box .two:hover,
+.activity .box .three:hover,
+.activity .box .four:hover {
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.activity .box .one img,
+.activity .box .two img,
+.activity .box .three img,
+.activity .box .four img {
+  width: 190px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: 190px;
+}
+.activity .box .one .yuan,
+.activity .box .two .yuan,
+.activity .box .three .yuan,
+.activity .box .four .yuan {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.activity .box .one .yuan .small,
+.activity .box .two .yuan .small,
+.activity .box .three .yuan .small,
+.activity .box .four .yuan .small {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: url('../images/icon-poll_1.png') no-repeat 3px 2px;
+  background-size: 55px 55px;
+  background-color: #fff;
+}
+.activity .box .one .yuan img,
+.activity .box .two .yuan img,
+.activity .box .three .yuan img,
+.activity .box .four .yuan img {
+  display: block;
+  width: 59.8px;
+  height: 59.8px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.activity .box .one:nth-child(2) .wen p,
+.activity .box .two:nth-child(2) .wen p,
+.activity .box .three:nth-child(2) .wen p,
+.activity .box .four:nth-child(2) .wen p,
+.activity .box .one:nth-child(2) .wen span,
+.activity .box .two:nth-child(2) .wen span,
+.activity .box .three:nth-child(2) .wen span,
+.activity .box .four:nth-child(2) .wen span,
+.activity .box .one:nth-child(2) .wen h3,
+.activity .box .two:nth-child(2) .wen h3,
+.activity .box .three:nth-child(2) .wen h3,
+.activity .box .four:nth-child(2) .wen h3 {
+  color: white;
+}
+.activity .box .one:nth-child(3) .wen p,
+.activity .box .two:nth-child(3) .wen p,
+.activity .box .three:nth-child(3) .wen p,
+.activity .box .four:nth-child(3) .wen p,
+.activity .box .one:nth-child(3) .wen span,
+.activity .box .two:nth-child(3) .wen span,
+.activity .box .three:nth-child(3) .wen span,
+.activity .box .four:nth-child(3) .wen span,
+.activity .box .one:nth-child(3) .wen h3,
+.activity .box .two:nth-child(3) .wen h3,
+.activity .box .three:nth-child(3) .wen h3,
+.activity .box .four:nth-child(3) .wen h3 {
+  color: white;
+}
+.activity .box .one .wen,
+.activity .box .two .wen,
+.activity .box .three .wen,
+.activity .box .four .wen {
+  position: relative;
+  width: 150px;
+  height: 180px;
+  padding-top: 70px;
+  padding-left: 12px;
+}
+.activity .box .one .wen p,
+.activity .box .two .wen p,
+.activity .box .three .wen p,
+.activity .box .four .wen p {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-size: 9px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0 6px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.activity .box .one .wen span,
+.activity .box .two .wen span,
+.activity .box .three .wen span,
+.activity .box .four .wen span {
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 800;
+  color: black;
+}
+.activity .box .one .wen h3,
+.activity .box .two .wen h3,
+.activity .box .three .wen h3,
+.activity .box .four .wen h3 {
+  font-size: 8px;
+  color: black;
+}
+.activity .box .one {
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+.activity .box .one .yuan {
+  background-color: yellow;
+}
+.activity .box .two {
+  background-color: #ee0500;
+  margin-bottom: 20px;
+}
+.activity .box .two .yuan {
+  background-color: #ee0500;
+}
+.activity .box .three {
+  background-color: #00bff3;
+}
+.activity .box .three .yuan {
+  background-color: #00bff3;
+}
+.activity .box .four {
+  background-color: #00d2ff;
+}
+.activity .box .four .yuan {
+  background-color: #00d2ff;
+}
+.activity .di {
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  top: 700px;
+  left: 0;
+  background: url('../images/zigzag-red-dark_2x.png') repeat-x center top;
+  background-size: 240px 12px;
+}
+.facebook {
+  width: 100%;
+  height: 165px;
+  background: url('../images/2.jpg') repeat-x center center;
+  background-size: 244px 266.5px;
+}
+.facebook .zhong {
+  height: 100%;
+  position: relative;
+}
+.facebook .zhong img {
+  position: absolute;
+  top: -23px;
+  left: 264px;
+}
+.facebook .zhong h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  line-height: 136px;
+  margin-right: 234px;
+}
+.facebook .zhong h3 a {
+  color: white;
+}
+.facebook .zhong h3 a:hover {
+  color: yellow;
+}
+.footer {
+  background: url(../images/ground.png) repeat left top;
+  margin-top: 103px;
+  position: relative;
+}
+.footer:before {
+  content: '';
+  background: url(../images/leaves.png) repeat-x left top;
+  display: block;
+  height: 103px;
+  width: 100%;
+  position: absolute;
+  top: -103px;
+  left: 0;
+}
+.footer .row1 {
+  padding-bottom: 26px;
+}
+.footer .row1 .foot-share {
+  width: 555px;
+  height: 66px;
+  background: #fff;
+  border: 2px solid #E6E6E6;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #9b9b9b;
+  display: block;
+  position: relative;
+}
+.footer .row1 .foot-share .one,
+.footer .row1 .foot-share .tow,
+.footer .row1 .foot-share .three,
+.footer .row1 .foot-share .four {
+  background: #F8E190;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+}
+.footer .row1 .foot-share .one {
+  top: 10px;
+  left: 10px;
+}
+.footer .row1 .foot-share .tow {
+  top: 10px;
+  right: 10px;
+}
+.footer .row1 .foot-share .three {
+  bottom: 10px;
+  left: 10px;
+}
+.footer .row1 .foot-share .four {
+  bottom: 10px;
+  right: 10px;
+}
+.footer .row1 .foot-share .content {
+  height: 100%;
+  display: flex;
+  padding: 0 65px;
+  box-sizing: border-box;
+}
+.footer .row1 .foot-share .content p {
+  flex: 1;
+  padding: 0 10px;
+  margin: 25px 0;
+  color: #7B7B7B;
+  text-align: center;
+  font-size: 16px;
+}
+.footer .row1 .foot-share .content a {
+  flex: 1;
+  display: block;
+  color: #E60012;
+  border: 2px solid #E60012;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 38px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 40px;
+  margin: 12px 36px;
+}
+.footer .row1 .foot-share .content a:hover {
+  background-color: #E60012;
+  color: #fff;
+}
+.footer .foot-link {
+  height: 345px;
+  background-color: #502B25;
+  padding: 80px 15px 60px 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+.footer .foot-link .back .back-top {
+  width: 128px;
+  height: 100px;
+  position: absolute;
+  bottom: 337px;
+  right: 10px;
+  overflow: hidden;
+  z-index: 998;
+}
+.footer .foot-link .back .back-top img {
+  width: 128px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.footer .foot-link .back a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2;
+  width: 128px;
+  height: 68px;
+  background: url(../images/arrow-backtotop.png) no-repeat;
+  background-size: 100%;
+  color: #fff;
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  z-index: 999;
+}
+.footer .foot-link .back a:hover .back-top {
+  height: 200px;
+}
+.footer .foot-link .back a span {
+  line-height: 70px;
+}
+.footer .foot-link .link {
+  height: 205px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer .foot-link .link .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.footer .foot-link .link .box .box1 {
+  width: 92px;
+  height: 92px;
+  background: url(../images/logo-amiibo.svg);
+  cursor: pointer;
+}
+.footer .foot-link .link .box .box2 {
+  width: 288px;
+  height: 90px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.footer .foot-link .link .box .box2 p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.footer .foot-link .link .box .box2 a:nth-child(2) img {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+}
+.footer .foot-link .link .box .box2 a:nth-child(3) img {
+  position: absolute;
+  bottom: 5px;
+  left: 65px;
+}
+.footer .foot-link .link .box .box2 a:nth-child(4) img {
+  position: absolute;
+  bottom: 5px;
+  right: 87px;
+}
+.footer .foot-link .link .box .box2 a:nth-child(5) img {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}
+.footer .foot-link .link .box .box2 img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin-left: 20px;
+  float: left;
+}
+.footer .foot-link .link .box .box3 {
+  height: 92px;
+  cursor: pointer;
+}
+.footer .foot-link .link .box .box3 img:nth-child(1) {
+  width: 136px;
+  height: 90px;
+  margin: 0 7px;
+}
+.footer .foot-link .link .box .box3 img:nth-child(2) {
+  width: 66px;
+  height: 90px;
+  margin: 0 7px;
+}
+.footer .foot-link .link .box .box4 {
+  text-align: center;
+  margin: 16px auto 30px;
+  width: 96%;
+}
+.footer .foot-link .link .box .box4 a {
+  color: #fff;
+  font-size: 12px;
+}
+.footer .foot-link .link .box .box4 a:hover {
+  text-decoration: underline;
+}
+.footer .foot-link .link .box .box4 span {
+  color: #fff;
+  font-size: 12px;
+}
+.footer .foot-link .link .box .box5 {
+  margin: 0 auto;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer .foot-link .link .box .box5 .copy {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+.footer .foot-link .link .box1,
+.footer .foot-link .link .box2,
+.footer .foot-link .link .box3 {
+  margin: 16px;
+}

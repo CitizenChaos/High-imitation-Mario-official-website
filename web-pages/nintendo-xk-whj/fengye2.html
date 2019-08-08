@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nintendo - Official Site - Video Game Consoles, Games</title>
+  <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fonts/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="./icon.png">
+  <style>
+    .sliderfather {
+      background-color: #a8e2f6;
+      transition: all 2s;
+      position: relative;
+    }
+
+    .slider {
+      width: 800px;
+      height: 430px;
+      margin: 0 auto;
+      position: relative;
+
+    }
+
+    .slider li {
+      position: absolute;
+      display: none;
+    }
+
+    .slider li:first-child {
+      display: block;
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    .slider:hover .arrow {
+      display: block;
+    }
+
+    .arrow-left,
+    .arrow-right {
+      font-family: "SimSun", "宋体";
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .arrow-left:hover,
+    .arrow-right:hover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    .arrow-left {
+      left: 0;
+    }
+
+    .arrow-right {
+      right: 0;
+    }
+
+    .sli-img {
+      width: 800px;
+      height: 400px;
+    }
+
+    .visit {
+      width: 100%;
+      height: 80px;
+      position: absolute;
+      bottom: 0;
+
+      background-color: #000;
+      opacity: 0.6;
+    }
+
+    .visit .teen {
+      width: 800px;
+      height: 70px;
+      margin: 0 auto;
+    }
+
+    .visit .teen img {
+      margin-top: 5px;
+
+    }
+
+    .teen-left {
+      width: 120px;
+      height: 15px;
+      position: absolute;
+      top: 35px;
+      left: 300px;
+
+    }
+
+    /* .teen-left ul{
+        width: 120px;
+        height: 50px;
+        float: left;
+    } */
+    .teen-left span {
+      float: left;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      font-size: 10px;
+      width: 120px;
+      height: 15px;
+      visibility: hidden;
+    }
+
+    /* .teen-left span:nth-of-type(1){
+        visibility: visible;
+    } */
+
+
+
+    .teen-center {
+      width: 450px;
+      height: 30px;
+      font-size: 30px;
+      color: #fff;
+      position: absolute;
+      top: 17px;
+      left: 420px;
+    }
+
+    .teen-center span {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      visibility: hidden;
+    }
+
+    .teen-right {
+      width: 120px;
+      height: 50px;
+      /* padding: 10px 10px 10px 10px; */
+      background-color: skyblue;
+      opacity: 1;
+      border-radius: 5px;
+      position: absolute;
+      top: 3px;
+      right: 250px;
+      text-align: center;
+      line-height: 50px;
+
+    }
+
+    .teen-right span {
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      visibility: hidden;
+    }
+
+    .teen-right span a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .active {
+      visibility: visible !important;
+    }
+
+    .visit .lood {
+      position: absolute;
+      width: 200px;
+      height: 20px;
+      top: 60px;
+      right: 135px;
+    }
+
+    .visit .lood span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #fff;
+
+
+    }
+
+    .bgc {
+      background-color: skyblue !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航 -->
+  <div class="nav">
+    <div class="top-nav container">
+      <img src="./images/loading.gif" alt="" class="loading pull-right">
+      <input type="text" class="pull-right" placeholder="Search games, systems, support, etc.">
+      <span class="iconfont icon-chaxun pull-right"></span>
+      <a href="../nintendo-xk-whj/fengye2.html"><div class="logo"></div></a>
+    </div>
+    <div class="box">
+      <div class="bottom-nav container">
+        <ul>
+          <li>
+            <a href="#">Nintendo Switch</a>
+          </li>
+          <li>
+            <a href="#">Nintendo 3DS | 2DS</a>
+          </li>
+          <li>
+            <a href="#">Game Store</a>
+          </li>
+          <li>
+            <a href="#">amiibo</a>
+          </li>
+          <li>
+            <a href="#">Play Nintendo</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">My Nintendo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 透明导航 -->
+  <!-- <div class="opacitynav">
+        <div class="box container">
+            <ul>
+                <li><a href="./index.html"><span>HOME</span></a></li>
+                <li><a href="#"><span>ABOUT</span></a></li>
+                <li><a href="#"><img src="./images/logo-mario-m_2x.png" alt=""></a></li>
+                <li><a href="#"><span>CHARACTERS</span></a></li>
+                <li><a href="#"><span>HISTORY</span></a></li>
+            </ul>
+        </div>
+    </div> -->
+  <!-- 主体部分 -->
+  <div class="main">
+    <div class="sliderfather">
+      <div class="slider">
+        <ul class="clearfix">
+          <li><a href="#"><img class="sli-img" src="images/01.jpg" alt=""></a></li>
+          <li><a href="#"><img class="sli-img" src="images/02.jpg" alt=""></a></li>
+          <li><a href="#"><img class="sli-img" src="images/03.jpg" alt=""></a></li>
+          <li><a href="#"><img class="sli-img" src="images/04.jpg" alt=""></a></li>
+        </ul>
+
+        <div class="arrow">
+          <span class="arrow-left">&lt;</span>
+          <span class="arrow-right">&gt;</span>
+        </div>
+
+
+      </div>
+      <div class="visit">
+        <div class="teen">
+
+          <img src="images/e2.svg" style=" width:47px ; height:70px " alt="">
+          <div class="teen-left" id="teen-left">
+
+            <span class="active">Mild Fantasy Violence</span>
+            <span>Sexual Themes</span>
+            <span>Mild Cartoon Violence</span>
+            <span>Mild Cartoon Violence</span>
+
+          </div>
+          <div class="teen-center">
+            <span class="active">Game and domo available now</span>
+            <span>available now</span>
+            <span>Games&domos available now</span>
+            <span>Games and domos available now</span>
+          </div>
+          <div class="teen-right">
+            <span class="active"><a href="#">Visit site</a></span>
+            <span><a href="#">Learn more</a></span>
+            <span><a href="#">Learn more</a></span>
+            <span><a href="#">Visit site</a></span>
+          </div>
+        </div>
+        <div class="lood">
+          <span class="bgc"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------------banner2 -->
+  <div class="banner2">
+    <ul id="imgs">
+      <li>
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+      </li>
+      <li>
+        <img src="images/4.jpg" alt="">
+        <img src="images/5.jpg" alt="">
+        <img src="images/6.jpg" alt="">
+
+      </li>
+      <li>
+        <img src="images/7.jpg" alt="">
+        <img src="images/8.jpg" alt="">
+        <img src="images/9.jpg" alt="">
+      </li>
+      <li>
+        <img src="images/10.jpg" alt="">
+        <img src="images/11.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+      </li>
+      <li>
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+      </li>
+    </ul>
+    <!-- 小圆点 -->
+    <ul class="points" id="points">
+      <li class="now"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- 左右箭头 -->
+    <div id="box">
+      <div class="left">&lt;</div>
+        <div class="right">&gt;</div>
+    </div>
+  </div>
+  </div>
+
+  <!-- ------------------------explore -->
+  <div class="explore">
+    <h2>Explore gaming systems</h2>
+    <a href="javascript:;">
+      <img src="images/p1.jpg" alt="">
+      <p>Nintendo Switch</p>
+      <p>$299.99</p>
+    </a>
+    <a href="javascript:;">
+      <img src="images/p2.jpg" alt="">
+      <p>Nintendo 2DS</p>
+      <p>Start at $79.99</p>
+    </a>
+  </div>
+
+  <!-- ---------------------------pro1 -->
+  <div class="pro1">
+    <h3>New amiibo releases <span>|</span> <a href="javascript:;">See all</a></h3>
+    <a href="javascript:;"><img src="images/p3.png" alt="">
+      <p>Daisy</p>
+      <p>04.12.19</p>
+    </a>
+    <a href="javascript:;"><img src="images/p4.png" alt="">
+      <p>Ken</p>
+      <p>04.12.19</p>
+    </a>
+    <a href="javascript:;"><img src="images/p5.png" alt="">
+      <p>Young Link</p>
+      <p>04.11.19</p>
+    </a>
+    <a href="javascript:;"><img src="images/p6.png" alt="">
+      <p>Piranha Plant</p>
+      <p>02.15.19</p>
+    </a>
+  </div>
+
+  <!-- ---------------------------pro2 -->
+  <div class="pro2">
+    <div class="left">
+      <h3>What's New<span> |</span> <a href="javascript:;">See all</a></h3>
+      <div class="top">
+        <div>05.03.19</div>
+        <p>Celebrate Space Day by exploring these stellar games</p>
+        <a href="javascript:;">Read more</a>
+      </div>
+      <div class="bottom">
+        <div>05.02.19</div>
+        <p>The Noodle House meets the Movie House as Min Min takes on Twintelle in the next Party Crash Bash!
+        </p>
+        <a href="javascript:;">Read more</a>
+      </div>
+    </div>
+    <div class="right">
+      <h3>New video game releases<span> |</span> <a href="javascript:;">See all</a></h3>
+      <div class="box1">
+        <div class="left1"><img src="images/p7.png" alt=""></div>
+        <div class="right1">
+          <div class="div1">04.26.19</div>
+          <p>BOXBOY! + BOXGIRL!</p>
+          <p> Nisntendo Switch</p>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="left2"><img src="images/p8.png" alt=""></div>
+        <div class="right2">
+          <div class="div2">04.26.19</div>
+          <p>Mortal Kombat 11</p>
+          <p> Nintendo Switch</p>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="left3"><img src="images/p9.png" alt=""></div>
+        <div class="right3">
+          <div class="div3">03.28.19</div>
+          <p>Yoshi's Crafted World</p>
+          <p> Nintendo Switch</p>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="left4"><img src="images/p10.png" alt=""></div>
+        <div class="right4">
+          <div class="div4">03.07.19</div>
+          <p>Kirby's Extra Epic Yarn</p>
+          <p>Nintendo 3DS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------pro3 -->
+  <div class="pro3">
+    <ul>
+      <li><img src="images/a1.png" alt="">
+        <p>Exclusive news broadcast directly to you, the player</p>
+      </li>
+      <li><img src="images/a1.png" alt="">
+        <p>A handy list of our upcoming game releases.</p>
+      </li>
+      <li><img src="images/a1.png" alt="">
+        <p>Our top offers, price drops, and deals</p>
+      </li>
+      <li><img src="images/a1.png" alt="">
+        <p>Enjoy online multiplayer and more with Nintendo Switch Online</p>
+      </li>
+    </ul>
+
+    <p>MSRP: Manufacturer's Retail Price. Actual price may vary. See retailer for details.</p>
+  </div>
+
+  <!-- ---------------------link -->
+  <div class="link">
+    <div class="container">
+      <dl>
+        <dt><a href="javascript:;">About Nintendo</a></dt>
+        <dd><a href="javascript:;">Company Info</a></dd>
+        <dd><a href="javascript:;">Careers</a></dd>
+        <dd><a href="javascript:;">CSR Report</a></dd>
+        <dd><a href="javascript:;">Sitemap</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;">Where To Buy</a></dt>
+        <dd><a href="javascript:;">Game Store</a></dd>
+        <dd><a href="javascript:;">Online Retailers</a></dd>
+        <dd><a href="javascript:;">Nintendo NY</a></dd>
+        <dd><a href="javascript:;">Nintendo Store</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;">Support</a></dt>
+        <dd><a href="javascript:;">Health & Safety Precautions</a></dd>
+        <dd><a href="javascript:;">Nintendo Switch Support</a></dd>
+        <dd><a href="javascript:;">Wii U Support</a></dd>
+        <dd><a href="javascript:;">Nintendo 3DS Support</a></dd>
+        <dd><a href="javascript:;">Repair Help</a></dd>
+        <dd><a href="javascript:;">Nintendo Product Recycling</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;">Parents</a></dt>
+        <dd><a href="javascript:;">Info for Parents</a></dd>
+        <dd><a href="javascript:;">Parental Controls</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;"> Legal</a></dt>
+        <dd><a href="javascript:;">Documents and Policies</a></dd>
+        <dd><a href="javascript:;">Terms of Use</a></dd>
+      </dl>
+      <dl>
+        <dt><a href="javascript:;">Privacy</a></dt>
+        <dd><a href="javascript:;">Privacy Policy</a></dd>
+        <dd><a href="javascript:;">Privacy Policy</a></dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- ------------------footer -->
+  <!-- <div class="footer">
+
+    <div class="container">
+      <div class="box1">
+        <p><a href="javascript:;">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:;">Website
+            Feedback</a></p>
+        <img src="images/v1.svg" alt="">
+        <img src="images/v2.svg" alt="">
+        <img src="images/v3.svg" alt="">
+        <img src="images/v4.svg" alt="">
+      </div>
+      <img class="image" src="images/global.png" alt="">
+      <p>© 2019 Nintendo. Games are property of their respective owners. Nintendo of America Inc. Headquarters are
+        in Redmond, Washington</p>
+    </div>
+  </div> -->
+
+  <div class="footer">
+    <div class="row1">
+      <div class="foot-share">
+        <div class="one"></div>
+        <div class="tow"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+
+        <div class="content">
+          <p>Share this site:</p>
+          <a href="javascript:;">Customer Support</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-link">
+
+      <!-- 回到顶部 -->
+      <div class="back">
+
+        <div class="back-top">
+          <img src="./images/squid-v1.png" alt="top">
+        </div>
+
+        <a href="javascript:;">
+          <span>Top</span>
+        </a>
+      </div>
+
+
+      <div class="link container">
+        <div class="box">
+          <div class="box1"></div>
+          <div class="box2">
+            <p>Follow Nintendo:</p>
+            <a href="javascript:;"><img src="./images/logo-facebook.svg" alt=""></a>
+            <a href="javascript:;"><img src="./images/logo-twitter.svg" alt=""></a>
+            <a href="javascript:;"><img src="./images/logo-youtube.svg" alt=""></a>
+            <a href="javascript:;"><img src="./images/logo-instagram.svg" alt=""></a>
+          </div>
+          <div class="box3">
+            <img src="./images/en-e-e10.svg" alt="">
+            <img src="./images/logo-esrb-privacy-certified.png" alt="">
+          </div>
+          <!-- <p>Privacy Policy<span>|</span>Terms of Use</p> -->
+          <div class="box4">
+            <a href="javascript:;">Privacy Policy</a>
+            <span>|</span>
+            <a href="javascript:;">Terms of Use</a>
+          </div>
+
+          <div class="box5">
+            <p class="copy">Game trademarks and copyrights are properties of their respective owners. Nintendo
+              properties are trademarks of Nintendo. © 2019 Nintendo.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./lib/jquery-1.12.4.js"></script>
+  <script>
+    $(function () {
+
+      var bgc = ['#a8e2f6', '#c0d2dc', '#3ad1c2', '#128b3c']
+      var count = 0;
+      $('.arrow-right').click(function () {
+
+        console.log('111');
+        count++;
+        if (count === $('.slider li').length) {
+          count = 0;
+        };
+        $('#teen-left').find('span').eq(count).addClass('active').siblings().removeClass(
+          'active');
+        $('.teen-center').find('span').eq(count).addClass('active').siblings().removeClass(
+          'active');
+        $('.teen-right').find('span').eq(count).addClass('active').siblings().removeClass(
+          'active');
+        $('.lood').find('span').eq(count).addClass('bgc').siblings().removeClass('bgc');
+        $('.slider li').eq(count).fadeIn(2000).siblings('li').fadeOut();
+        $('.sliderfather').css('background-color', bgc[count]);
+      });
+
+
+
+      $('.arrow-left').click(function () {
+        count--;
+        if (count === -1) {
+          count = $('.slider li').length - 1;
+        };
+        $('#teen-left').find('span').eq(count).addClass('active').siblings().removeClass(
+          'active');
+        $('.teen-center').find('span').eq(count).addClass('active').siblings().removeClass(
+          'active');
+        $('.teen-right').find('span').eq(count).addClass('active').siblings().removeClass(
+          'active');
+        $('.lood').find('span').eq(count).addClass('bgc').siblings().removeClass('bgc');
+        $('.slider li').eq(count).fadeIn(2000).siblings('li').fadeOut();
+        $('.sliderfather').css('background-color', bgc[count]);
+      });
+
+
+
+      var time = setInterval(function () {
+
+        $('.arrow-right').click();
+
+      }, 3000);
+
+      $('.sliderfather').mouseenter(function () {
+        clearInterval(time);
+      });
+
+      $('.sliderfather').mouseleave(function () {
+        time = setInterval(function () {
+          $('.arrow-right').click();
+        }, 3000);
+
+
+      });
+
+
+
+    });
+
+    $(function () {
+      var left = document.querySelector('.left');
+      var right = document.querySelector('.right');
+      var $imgs = $('#imgs');
+      var lis = $imgs.children('li');
+      var width = $imgs.children('li').width();
+      var pointsul = document.querySelector('#points');
+      var points = pointsul.children;
+      var count = 0;
+
+      //  右箭头点击事件
+      right.onclick = function () {
+        if (count === lis.length - 1) {
+          count = 0;
+          $imgs.css('left', 0);
+        }
+
+        count++;
+
+        $imgs.stop().animate({
+          left: -count * width
+        });
+
+
+
+        for (var i = 0; i < points.length; i++) {
+          points[i].className = '';
+        }
+        if (count === lis.length - 1) {
+          points[0].className = 'now';
+        } else {
+          points[count].className = 'now';
+
+        }
+      };
+      //  左箭头点击事件
+
+
+      left.onclick = function () {
+
+        if (count === 0) {
+          count = lis.length - 1;
+          $imgs.css('left', -count * width);
+        }
+        count--;
+        $imgs.stop().animate({
+          left: -count * width
+        });
+
+        for (var i = 0; i < points.length; i++) {
+          points[i].className = '';
+        }
+        if (count === lis.length - 1) {
+          points[0].className = 'now';
+        } else {
+          points[count].className = 'now';
+
+        }
+      };
+      // //  小圆点事件
+      for (var i = 0; i < points.length; i++) {
+
+        points[i].index = i;
+        points[i].onclick = function () {
+          for (var i = 0; i < points.length; i++) {
+            points[i].className = '';
+          }
+          this.className = 'now';
+
+          if (count === lis.length - 1) {
+            count = 0;
+            imgs.style.left = 0;
+          }
+          count = this.index;
+          $imgs.stop().animate({
+            left: -count * width
+          });
+        }
+      }
+
+
+    })
+
+    // 回到顶部功能：
+    $(function () {
+      var $jump = $('.back .back-top');
+      var $top = $('.back a');
+      var over = document.body.scrollHeight - 345 - 100; // 剩余高度=页面全文高度-footer的高度-nav（固定导航的高度）
+
+
+      $top.on('mouseenter', function () {
+        $jump.css({
+          height: 120
+        });
+      });
+
+      $top.on('mouseleave', function () {
+        $jump.css({
+          height: 100
+        });
+      });
+
+
+      // 注册点击事件：
+      $top.on('click', function () {
+        $('html').animate({
+          scrollTop: 0
+        }, 1000);
+
+
+        // 让$img的高度慢慢的变高
+        $jump.animate({
+          height: over
+        }, 1000, function () {
+          $jump.animate({
+            height: 100
+          }, 6000); //到达顶部慢慢的降落到初始高度
+        });
+      });
+    });
+  </script>
+</body>
+</html>
