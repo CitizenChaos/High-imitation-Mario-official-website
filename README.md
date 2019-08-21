@@ -3,14 +3,14 @@
 ## 项目文件夹结构
 ```
 ./高仿马里奥官网/
-├──	index.html						// 主页链接
-├── web-pages/						// 各网页文件夹
-│	├── about-tx-wy						// about部分（谈笑、王阳）
-│	├── character-qc					// character部分（钱成、周越）
-│	├── friends-tx						// friends部分（谈笑、刘颖）
-│	├── history-zy						// history部分（周越、钱成）
-│	├── index-wy-cqg					// index部分（王阳、陈庆功）
-└──	└── nintendo-xk-whj					// official部分（徐凯、吴恒金）
+├──	index.html
+├── web-pages/
+│	├── about-tx-wy
+│	├── character-qc
+│	├── friends-tx
+│	├── history-zy
+│	├── index-wy-cqg
+└──	└── nintendo-xk-whj
 ```
 
 ## 主页可点击链接说明
